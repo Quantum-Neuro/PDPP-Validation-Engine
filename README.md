@@ -29,7 +29,7 @@ When applied to high-precision EEG datasets of advanced mental trainees, this en
 
 ```bash
 # Clone the repository
-git clone https://github.com/YourUsername/PDPP-Validation-Engine.git
+git clone https://github.com/Quantum-Neuro/PDPP-Validation-Engine.git
 cd PDPP-Validation-Engine
 
 # Install dependencies
