@@ -22,8 +22,8 @@ Unlike traditional statistical pipelines, this engine is built with strict indus
 ## 📊 Empirical Breakthroughs
 
 When applied to high-precision EEG datasets of advanced mental trainees, this engine successfully intercepted all classical noise samples (Inverse Negative Controls) and achieved unprecedented statistical significance in positive samples:
-- **Generative Drive**: $p = 7.43 \times 10^{-14}$
-- **Counterfactual Shielding (Absolute Silence)**: $p = 3.76 \times 10^{-27}$
+- **Generative Drive**: p = 7.43 &times; 10<sup>-14</sup>
+- **Counterfactual Shielding (Absolute Silence)**: p = 3.76 &times; 10<sup>-27</sup>
 
 *(For full mathematical derivation and empirical results, please refer to our [Research Manuscript](docs/PDPP_Topological_Shielding_Validation.pdf) in the `/docs` folder).*
 
