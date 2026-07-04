@@ -1,7 +1,7 @@
 # PDPP Validation Engine: Macroscopic Topological Phase Transition & Causal Inference Pipeline
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)]()
 
 The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industrial-grade, fail-safe algorithmic pipeline designed to detect macroscopic topological phase transitions in complex neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems.
@@ -23,21 +23,54 @@ When applied to high-precision EEG datasets of advanced mental trainees, this en
 - **Generative Drive**: $p = 7.43 \times 10^{-14}$
 - **Counterfactual Shielding (Absolute Silence)**: $p = 3.76 \times 10^{-27}$
 
-*(For full mathematical derivation and empirical results, please refer to our [arXiv Preprint](#) in the `/docs` folder).*
+*(For full mathematical derivation and empirical results, please refer to our [Research Manuscript](docs/PDPP_Topological_Shielding_Validation.pdf) in the `/docs` folder).*
 
-## ⚙️ Quick Start
+## 📖 Theoretical Framework & Documentation
+
+This engine serves as the computational backbone for the **Pan-Dimensional Phase Projection (PDPP)** theoretical framework. The PDPP theory bridges macroscopic neurodynamics with open quantum systems, proposing that biological neural networks can undergo topological phase transitions capable of actively shielding quantum decoherence.
+
+Inside the `docs/` folder, you will find the core academic literature detailing this framework:
+
+- 📄 **[`PDPP_Topological_Shielding_Validation.pdf`](docs/PDPP_Topological_Shielding_Validation.pdf)**
+  *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features (DMN Decoupling, Theta-Gamma PAC) and quantum parameters ($\gamma$, $\epsilon$), and the rigorous causal inference results.*
+
+We highly encourage researchers in quantum biology, cognitive neuroscience, and complex systems to review this document to understand the profound physical implications behind the algorithmic processes executed by this engine.
+
+## ⚙️ Quick Start (One-Click Execution)
+
+This project provides dedicated "double-click" entry scripts for different operating systems, eliminating the need to configure complex terminal environments. After installing Python 3.9+, you can directly **double-click** the corresponding file below to launch the engine:
+
+- **🍎 macOS Users**: Double-click `start.command`
+- **🪟 Windows Users**: Double-click `start.bat`
+- **🐧 Linux Users**: Execute `./start.sh` in the terminal, or double-click `start.sh` in a GUI environment.
+
+> **✨ Automated Sandbox Environment**: On the first run, the script will automatically create an isolated virtual environment (`.venv`) and use `pip` to perfectly align all dependencies. Once complete, the engine will start seamlessly. Please be patient during the first initialization!
+
+---
+
+## 💾 Data Provisioning (Auto-Download & Sample Dataset)
+
+To keep this repository extremely lightweight and comply with data provenance regulations, **no real EEG data files are stored in this repository**. Instead, the pipeline features a dual-layer automated data provisioning system:
+
+1. **Auto-Download (Primary Method):** When you run the engine for the first time, if your `./data` folder is empty, the engine will automatically connect to the OpenNeuro official AWS S3 server and fetch 24 representative BIDS-compliant sample files from dataset `ds003816`.
+2. **Offline Sample Dataset (Fallback):** If your network connection is unstable, blocked, or completely offline, the auto-download will gracefully fail and the engine will automatically fall back to the `./data_sample` folder. This folder contains a tiny micro-sample (< 5MB, 10-second downsampled cuts) strictly for **code pipeline connectivity testing**. 
+
+> [!WARNING]
+> The Sample Dataset is composed of extremely brief micro-samples intended *only* to prove that the code architecture compiles, routes, and runs without crashing. **Do not expect complete or statistically significant validation results when using the Sample Dataset.** Genuine replication of the extreme value phase transitions requires the full high-precision dataset to be downloaded via the primary method.
+
+---
+
+### 💻 Developer CLI (Terminal/CMD)
 
 ```bash
 # Clone the repository
 git clone https://github.com/Quantum-Neuro/PDPP-Validation-Engine.git
 cd PDPP-Validation-Engine
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the automated validation pipeline on sample data
-python main.py --input ./data/sample_sub-11lt_EEG.npy --mode auto
+# Run the automated validation pipeline (dependencies will auto-install if missing)
+python main.py
+```
 
 🧠 Citation
 If you use this validation engine or the PDPP theoretical framework in your research, please cite our paper:
-Primary Investigator, et al. "Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation." arXiv (2026).
+Jia, W., et al. "Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation." arXiv (2026).

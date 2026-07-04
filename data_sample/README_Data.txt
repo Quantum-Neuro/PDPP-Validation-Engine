@@ -1,0 +1,1 @@
+This toy dataset is a 10-second micro-sample derived from OpenNeuro ds003816 under CC0 1.0 license, intended strictly for code pipeline connectivity testing.
