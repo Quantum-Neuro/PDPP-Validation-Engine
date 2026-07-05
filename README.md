@@ -33,7 +33,7 @@ This engine serves as the computational backbone for the **Pan-Dimensional Phase
 
 Inside the `docs/` folder, you will find the core academic literature detailing this framework:
 
-- 📄 **[`PDPP_Topological_Shielding_Validation.pdf`](docs/PDPP_Topological_Shielding_Validation.pdf)**
+- 📄 **[PDPP_Topological_Shielding_Validation.pdf](docs/PDPP_Topological_Shielding_Validation.pdf)**
   *(Note: If the PDF fails to render on mobile devices, please use the [Direct Download / Mobile-Friendly PDF](https://raw.githubusercontent.com/Quantum-Neuro/PDPP-Validation-Engine/main/docs/PDPP_Topological_Shielding_Validation.pdf))*
   *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features (DMN Decoupling, Theta-Gamma PAC) and quantum parameters (&gamma;, &epsilon;), and the rigorous causal inference results.*
 
