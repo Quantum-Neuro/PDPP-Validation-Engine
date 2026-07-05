@@ -110,13 +110,13 @@ According to statistical mechanics approximations, as the number of active parti
 
 ## **References**
 
-\[1\] Friston, K. (2010). The free-energy principle: a unified brain theory?. *Nature Reviews Neuroscience*, 11(2), 127-138.
+[1] Friston, K. (2010). The free-energy principle: a unified brain theory?. *Nature Reviews Neuroscience*, 11(2), 127-138.
 
-\[2\] Brewer, J. A., et al. (2011). Meditation experience is associated with differences in default mode network activity and connectivity. *PNAS*, 108(50), 20254-20259.
+[2] Brewer, J. A., et al. (2011). Meditation experience is associated with differences in default mode network activity and connectivity. *PNAS*, 108(50), 20254-20259.
 
-\[3\] Lutz, A., et al. (2004). Long-term meditators self-induce high-amplitude gamma synchrony during mental practice. *PNAS*, 101(46), 16369-16373.
+[3] Lutz, A., et al. (2004). Long-term meditators self-induce high-amplitude gamma synchrony during mental practice. *PNAS*, 101(46), 16369-16373.
 
-\[4\] Canolty, R. T., & Knight, R. T. (2010). The functional role of cross-frequency coupling. *Trends in Cognitive Sciences*, 14(11), 506-515.
+[4] Canolty, R. T., & Knight, R. T. (2010). The functional role of cross-frequency coupling. *Trends in Cognitive Sciences*, 14(11), 506-515.
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAABBElEQVR4XmNgGAX4gIqKCru8vPwfdHGKAdDQWUD8H12cYgAyFITl5OTy0eUoAkBD70MNp15wKCgoVIBomKvR5ckGQMNeQOmL0ODwQVdDFgC6OBFEAw01hLoabBFFAGhoBDKfasEBNOQjGv8d1HBNZHFSASPQgEnIAqKiojxQg/8hi5MEgJq7gEGhgUUcb3AA5YKAEayFLg4HuDQDxY+D5ICWRiKLA/nuQPHTUDWXlZSU1JDlGYC2zYC5CoSB/DyYHJB/BlkOiPdBpZhBfCR1vTA2RQBo+XSgYefRxSkGQEN3U70cAQFlZWUxoOG3QWwpKSkReWpkImQAjEAHIMWMLj4K6AMAmfBHTE1KeF4AAAAASUVORK5CYII=>
 

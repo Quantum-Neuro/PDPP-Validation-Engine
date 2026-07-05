@@ -110,13 +110,13 @@ Friston 提出，大脑是一个受热力学第二定律约束的贝叶斯推理
 
 ## **参考文献 (References)**
 
-\[1\] Friston, K. (2010). The free-energy principle: a unified brain theory?. *Nature Reviews Neuroscience*, 11(2), 127-138.
+[1] Friston, K. (2010). The free-energy principle: a unified brain theory?. *Nature Reviews Neuroscience*, 11(2), 127-138.
 
-\[2\] Brewer, J. A., et al. (2011). Meditation experience is associated with differences in default mode network activity and connectivity. *PNAS*, 108(50), 20254-20259.
+[2] Brewer, J. A., et al. (2011). Meditation experience is associated with differences in default mode network activity and connectivity. *PNAS*, 108(50), 20254-20259.
 
-\[3\] Lutz, A., et al. (2004). Long-term meditators self-induce high-amplitude gamma synchrony during mental practice. *PNAS*, 101(46), 16369-16373.
+[3] Lutz, A., et al. (2004). Long-term meditators self-induce high-amplitude gamma synchrony during mental practice. *PNAS*, 101(46), 16369-16373.
 
-\[4\] Canolty, R. T., & Knight, R. T. (2010). The functional role of cross-frequency coupling. *Trends in Cognitive Sciences*, 14(11), 506-515.
+[4] Canolty, R. T., & Knight, R. T. (2010). The functional role of cross-frequency coupling. *Trends in Cognitive Sciences*, 14(11), 506-515.
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAWCAYAAACVIF9YAAABh0lEQVR4Xu2WuUoEQRCGFxMTMZtoTnECBQ0EQY3EXI0Ed0EQn8DU0MjUxMjUJxAEH8EDDDQSDAwUL0QQQfD2K+nFpphkDmbZYT4oevuv2er+u5phGo2amu4jjuPeMAw/tV4ZMLdN/Gi9Mog5iSAIVnWuEmDu0pis3jWNomhNxnYXdb4sWPtNa4VA4TsznpprOqufKQMOuuV53qjWc0PhFRkxN2a6+Ge4E7D2h9ZygbmmPe/0NWU/Q9ygI61nBjPPav5kTA7behZ83x8kxtMGJhdZ/13M6pqpociZPef0FozBQ1vPArUn2PB82uB/y7IHxmldMxUUmcLQUoLesWvqOE4fa59rPRMUumDoSdC/xSCfb/06x6nuktsnrnWuCGRtrWVCuicm6OBcQm7HdHFP6a+u63rmd+IB5IGaMxzgpNZTQ6ED4la6QNxjctPKvRA3xJXJP4rOwi0x9V+leKj/pbXSwOAxG9jSemXA4Dqd3mjPeduNoEXWI90PHTwxL5kHYkDna2qK4ReRmnE7iGShoQAAAABJRU5ErkJggg==>
 
