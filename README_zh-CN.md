@@ -25,7 +25,7 @@
 - **生成性驱动力（Generative Drive）**：p = 7.43 &times; 10<sup>-14</sup>
 - **反事实屏蔽（绝对寂静状态）**：p = 3.76 &times; 10<sup>-27</sup>
 
-*（有关完整的数学推导与实证结果，请参阅 `docs` 文件夹中的 [研究手稿](docs/PDPP_Topological_Shielding_Validation.pdf)）。*
+*（有关完整的数学推导与实证结果，请参阅 `docs` 文件夹中的 [研究手稿](./docs/PDPP_Topological_Shielding_Validation.pdf)）。*
 
 ## 📖 理论框架与文档
 
@@ -33,7 +33,7 @@
 
 在 `docs/` 文件夹中，您可以找到详细阐述该框架的核心学术文献：
 
-- 📄 **[PDPP_Topological_Shielding_Validation.pdf](docs/PDPP_Topological_Shielding_Validation.pdf)**
+- 📄 **[PDPP_Topological_Shielding_Validation.pdf](./docs/PDPP_Topological_Shielding_Validation.pdf)**
   *(注：如果移动端显示无法渲染，请点击下方直达链接: [移动端直达/下载 PDF (Raw Content)](https://raw.githubusercontent.com/Quantum-Neuro/PDPP-Validation-Engine/main/docs/PDPP_Topological_Shielding_Validation.pdf))*
   *主要研究手稿。包含了双向 EVT 雷达的完整数学推导、经典脑电特征（DMN 解耦、Theta-Gamma 跨频耦合）与量子参数（&gamma;, &epsilon;）之间的拓扑映射方程，以及极其严谨的因果推断结果。*
 
