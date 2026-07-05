@@ -1,0 +1,126 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+% ----- Packages -----
+% 移除了 inputenc，因为现代 TeX 引擎原生支持 UTF-8
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{authblk}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{microtype}
+
+% ----- Page Setup & Formatting Fixes -----
+\geometry{
+    top=0.75in,
+    bottom=0.75in,
+    left=0.65in,
+    right=0.65in,
+    columnsep=0.25in
+}
+
+\raggedbottom % 修复 Underfull \vbox 警告，允许列底适度留白
+\tolerance=1000 % 修复 Underfull \hbox 警告，放宽双栏排版下的字间距拉伸限制
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+% ----- Title and Author -----
+\title{Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation}
+
+\author{Weili Jia \\
+\textit{Independent Researcher, Suzhou, China} \\
+\textit{Email: jiaweilivip@gmail.com}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The extreme vulnerability of quantum coherence to thermal noise in macroscopic biological systems presents a fundamental barrier in quantum biology. This study proposes a phenomenological computational model to investigate whether macroscopic topological phase transitions in neural networks can parametrically shield simulated microscopic quantum states from decoherence. By mapping Friston's Free Energy to environmental dissipation rates within a Lindblad open-system framework, we establish a cross-scale interaction mechanism. To empirically validate this model without introducing statistical illusions, we developed a highly robust signal processing pipeline for Electroencephalography (EEG) data. The engine incorporates Augmented Dickey-Fuller (ADF) stationarity constraints, Generalized Extreme Value (GEV) distribution modeling, and an adaptive baseline calibrator. Utilizing Bayesian Structural Time Series (BSTS) for counterfactual inference, empirical results demonstrate that the Suspension of Prior Predictions (deep DMN decoupling) combined with elevated Theta-Gamma Cross-Frequency Coupling (CFC) significantly prolongs the coherence lifespan of the simulated quantum target. These findings offer robust statistical evidence that macroscopic neural topologies can induce causal shielding effects, effectively mitigating environmental dissipation.
+\end{abstract}
+
+\section{Introduction}
+The theoretical intersection of computational neuroscience and open quantum systems is fundamentally constrained by the decoherence timescale limit, often cited as $10^{-13}$ seconds for room-temperature biological tissues \cite{Tegmark2000}. Classical models treat neural synchronization entirely as macroscopic thermodynamic events, isolating them from micro-level phase coherence.
+
+However, recent advancements in non-equilibrium statistical mechanics suggest that macroscopic phase transitions can drastically alter local thermodynamic diffusion coefficients. In this study, we introduce a phenomenological computational framework that maps macroscopic predictive processing (Friston Free Energy) \cite{Friston2010} to the environmental dissipation rates of a microscopic quantum system. 
+
+The primary objective of this research is an empirical validation. To avoid the mean-reversion masking effect and data leakage common in complex time-series analysis, we implemented a rigorous engineering pipeline. We analyze high-density EEG data through the lens of Extreme Value Theory (EVT) and apply Bayesian counterfactual inference \cite{Pearl2009} to evaluate the causal impact of neural topological transitions on quantum decoherence.
+
+\section{Theoretical Assumptions: The Phenomenological Model}
+
+\subsection{Dissipation Mapping via Wigner and Lindblad Evolution}
+To bridge the scale gap, we utilize the Wigner pseudo-probability function $W(x, p, t)$, which accommodates both quantum phase superposition and classical statistical distributions. We hypothesize that high-frequency neural sampling acts as a continuous measurement of the environment. In the Lindblad master equation:
+\begin{equation}
+\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right)
+\end{equation}
+The environmental dissipation rate $\gamma_k$ is strictly mapped as an exponential function of the system's Free Energy $\mathcal{F}$:
+\begin{equation}
+\gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right)
+\end{equation}
+Consequently, a reduction in prediction errors (e.g., via Suspension of Prior Predictions) proportionally decreases the measurement action $\Lambda_c$, subjected to Landauer's limit \cite{Landauer1961}.
+
+\subsection{Topological Protection and Pitchfork Bifurcation}
+According to the Fluctuation-Dissipation Theorem ($D = \gamma k_B T$), a drop in dissipation rate $\gamma$ intrinsically cools the diffusion baseline. Furthermore, we posit that long-range Theta-Gamma Cross-Frequency Coupling (CFC) induces macroscopic dipole oscillations analogous to Fr\"ohlich Condensation \cite{Frohlich1968}. This electromagnetic topology forms an effective Decoherence-Free Subspace (DFS), protecting the quantum phase from localized thermal scattering. The parametric distortion of the drift term triggers a Pitchfork Bifurcation, leading to the statistical emergence of Extreme Heavy-tailed Anomalies in the system's dynamic evolution.
+
+\section{Empirical Methodology}
+To validate the model, we designed a strict empirical verification engine capable of processing biological signals while mitigating overfitting and spurious correlations.
+
+\subsection{Signal Filtering and Feature Extraction}
+To definitively rule out the extraction of filter residuals, EEG signals were subjected to a precision Notch filter ($50/60$ Hz) to physically eliminate power-line interference. Simultaneously, the bandpass upper limit was strictly extended to $100$ Hz. This ensures that the extracted $30-70$ Hz broadband Gamma and Theta-Gamma CFC are authentic physiological oscillations, eliminating the suspicion of narrow-band overfitting. Macroscopic topological features were extracted using fully vectorized tensor operations. DMN decoupling was quantified via the inverse of FZ-PZ spectral coherence, while topological CFC was measured using the Modulation Index (MI) via TensorPAC.
+
+\subsection{Extreme Value Radar and $3\sigma$ Retrospective Blind Sweep}
+To isolate genuine phase transitions from Gaussian white noise and avoid the "Texas Sharpshooter Fallacy," we applied Extreme Value Theory (EVT) through a $3\sigma$ Retrospective Blind Sweep. The empirical CFC maxima were fitted to a Generalized Extreme Value (GEV) distribution:
+\begin{equation}
+G(x; \mu, \sigma, \xi) = \exp\left\{ -\left[ 1 + \xi \left( \frac{x - \mu}{\sigma} \right) \right]^{-1/\xi} \right\}
+\end{equation}
+The system enforces strict physical interlocks: data segments with variance below $10^{-6}$ are automatically rejected to prevent sensor-failure anomalies. Furthermore, causal validation is only authorized if intervention points pass the data-leakage isolation checks (e.g., maintaining a minimum baseline and observation window length).
+
+\subsection{Stationarity Constraints and Granger Causality}
+Before executing Granger causal inference, the engine mandates an Augmented Dickey-Fuller (ADF) test. Non-stationary time series are subjected to first-order differencing:
+\begin{equation}
+\Delta y_t = y_t - y_{t-1}
+\end{equation}
+This indispensable preprocessing step strips global baseline drifts, ensuring that the detected causality reflects genuine dynamic coupling rather than spurious collinearity.
+
+\subsection{Adaptive Calibration and Counterfactual Inference}
+To map macroscopic EEG features to the simulated quantum dynamics without generating statistical illusions, we implemented an adaptive baseline calibrator. The optimizer seeks a global constant multiplier to ensure the quantum purity decays naturally over the observation window, preventing premature flatlining.
+
+For high-confidence causal attribution, we replaced standard predictive models with a Bayesian Structural Time Series (BSTS) engine. Setting a predefined intervention point at the onset of the topological phase transition, the BSTS engine synthesizes a counterfactual parallel baseline---representing the quantum decoherence trajectory had the neural topological protection not occurred. The Average Causal Effect (ACE) is subsequently calculated as the integral difference between the observed shielded purity and the counterfactual decay.
+
+\section{Results and Discussion}
+The empirical pipeline successfully processed the targeted EEG epochs. The EVT radar detected significant deviations in the right tail of the CFC distribution during periods of DMN decoupling, breaching the classical thermal noise threshold. 
+
+Subsequent BSTS analysis confirmed a statistically significant causal shielding effect. The empirical quantum purity sequence, parametrically driven by the neural metrics, exhibited a prolonged coherence lifespan that substantially exceeded the expected collapse trajectory derived from the counterfactual model. The ADF-constrained Granger tests further corroborated the directional influence from the neural topological metric to the quantum state decay.
+
+\section{Conclusion}
+This study validates a phenomenological computational model where macroscopic neural topologies parametrically shield microscopic quantum coherence. By employing a rigorous verification engine featuring EVT logic interlocks, ADF stationarity constraints, and BSTS counterfactual inference, we demonstrated that the observed causal shielding is highly robust against mean-reversion masking and classical statistical illusions. These findings provide an empirical basis for understanding multi-scale topological protection in biological systems.
+
+\begin{thebibliography}{10}
+
+\bibitem{Tegmark2000}
+Tegmark, M. ``Importance of quantum decoherence in brain mechanisms'', \textit{Physical Review E}, 61(4), 4194-4206 (2000).
+
+\bibitem{Friston2010}
+Friston, K. ``The free-energy principle: a unified brain theory?'', \textit{Nature Reviews Neuroscience}, 11(2), 127-138 (2010).
+
+\bibitem{Landauer1961}
+Landauer, R. ``Irreversibility and Heat Generation in the Computing Process'', \textit{IBM Journal of Research and Development}, 5(3), 183-191 (1961).
+
+\bibitem{Frohlich1968}
+Fr\"ohlich, H. ``Long-range coherence and energy storage in biological systems'', \textit{International Journal of Quantum Chemistry}, 2(5), 641-649 (1968).
+
+\bibitem{Pearl2009}
+Pearl, J. \textit{Causality: Models, Reasoning, and Inference}. Cambridge University Press, 2nd Edition (2009).
+
+\end{thebibliography}
+
+\end{document}
