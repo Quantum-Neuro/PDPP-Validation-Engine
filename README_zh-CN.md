@@ -38,6 +38,10 @@
 
 我们强烈鼓励量子生物学、认知神经科学以及复杂系统领域的学者阅读此文档，以理解该引擎执行的算法流程背后极其深远的物理学意义。
 
+对于希望快速理解 PDPP 框架如何跨越不同学科边界的广大研究人员，我们准备了一份极具学术逻辑的**跨学科罗塞塔石碑（Rosetta Stone）矩阵**：
+- 👉 **[阅读 PDPP 理论框架白皮书 (简体中文)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
+- 👉 **[Read PDPP Theoretical Framework Whitepaper (English)](./docs/PDPP_Theoretical_Framework_Whitepaper_EN.md)**
+
 ## ⚙️ 快速启动（一键执行）
 
 本项目为不同操作系统提供了专用的“双击”入口脚本，免去了配置复杂终端环境的烦恼。在安装 Python 3.9+ 之后，您可以直接**双击**下方的对应文件来启动引擎：

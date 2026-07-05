@@ -38,6 +38,10 @@ Inside the `docs/` folder, you will find the core academic literature detailing 
 
 We highly encourage researchers in quantum biology, cognitive neuroscience, and complex systems to review this document to understand the profound physical implications behind the algorithmic processes executed by this engine.
 
+For general researchers looking to quickly understand how the PDPP framework bridges different disciplines, we have prepared an **Interdisciplinary Rosetta Stone Matrix**:
+- 👉 **[Read PDPP Theoretical Framework Whitepaper (English)](./docs/PDPP_Theoretical_Framework_Whitepaper_EN.md)**
+- 👉 **[阅读 PDPP 理论框架白皮书 (简体中文)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
+
 ## ⚙️ Quick Start (One-Click Execution)
 
 This project provides dedicated "double-click" entry scripts for different operating systems, eliminating the need to configure complex terminal environments. After installing Python 3.9+, you can directly **double-click** the corresponding file below to launch the engine:
