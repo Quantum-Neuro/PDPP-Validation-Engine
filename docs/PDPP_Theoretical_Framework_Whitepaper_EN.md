@@ -36,7 +36,8 @@ To eliminate the mathematical discontinuity between pure coherent state evolutio
 
 
 $$ W(x,p) = \frac{1}{\pi \hbar} \int_{-\infty}^{\infty} \psi^*(x+y) \psi(x-y) e^{2ipy/\hbar} dy $$
- permits negative probability amplitudes in phase space (representing microscopic coherence and quantum interference), while smoothly transitioning into the strictly positive classical Fokker-Planck probability density function under the limit of strong environmental decoherence. This mathematical bridge ensures continuous deduction from phase superposition to thermodynamic behavior.
+
+permits negative probability amplitudes in phase space (representing microscopic coherence and quantum interference), while smoothly transitioning into the strictly positive classical Fokker-Planck probability density function under the limit of strong environmental decoherence. This mathematical bridge ensures continuous deduction from phase superposition to thermodynamic behavior.
 
 ## **Chapter 2: Physical Dissipation Mapping of Prediction Errors and Lindblad Evolution**
 
@@ -48,10 +49,12 @@ The PDPP theory hypothesizes that this high-frequency neuronal predictive sampli
 
 
 $$ \frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right) $$
+
 We strictly map the environmental dissipation rate $\gamma_k$ as an exponential function of Free Energy $\mathcal{F}$:
 
 
 $$ \gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right) $$
+
 When the system is in a high free energy (high prediction error/fixation) state, $\mathcal{F}(t) \gg k_B T$. Measurement operators dominate, causing the off-diagonal elements of the Wigner function to rapidly decay, triggering instantaneous environmental decoherence and a complete regression to classical Markovian evolution.
 
 ### **2.2 Landauer Limit and Measurement Action (Bits/Joule)**
@@ -70,6 +73,7 @@ When the DMN undergoes deep decoupling, the effective measurement dissipation ra
 
 
 $$ D = \gamma k_B T $$
+
 The diffusion coefficient $D$ will synchronously decrease exponentially. This endogenous noise-cooling mechanism vastly reduces the perturbation of internal thermal phonons on the phase, providing the indispensable foundation for the survival of weak coherent states.
 
 ### **3.2 Cross-Frequency Coupling (CFC) and Fröhlich Condensation**
@@ -86,6 +90,7 @@ Protected by the DFS, the Wigner function is approximated at the macroscopic sca
 
 
 $$ \frac{\partial \rho}{\partial t} = -\nabla \cdot \left[ \mu(x, t, \theta) \rho \right] + \nabla^2 \left[ D(x, t, \epsilon) \rho \right] $$
+
 In conventional classical physics, merely reducing diffusion noise $D$ only causes the probability distribution to collapse toward existing mediocre attractors. However, in the PDPP framework, due to the survival of the phase angle $\theta$ and the intervention of long-range coupling, the system's drift term $\mu(x, t, \theta)$ is subjected to parametric regulation by non-local topology.
 
 ### **4.2 Statistical Emergence of Pitchfork Bifurcation**

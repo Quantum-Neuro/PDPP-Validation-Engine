@@ -36,7 +36,8 @@
 
 
 $$ W(x,p) = \frac{1}{\pi \hbar} \int_{-\infty}^{\infty} \psi^*(x+y) \psi(x-y) e^{2ipy/\hbar} dy $$
- 允许在相空间中存在负概率幅（表征微观相干性与量子干涉），同时在强环境退相干 (Decoherence) 极限下，它能够平滑过渡为经典统计力学中纯正值的 Fokker-Planck 概率密度函数。这一数学桥梁确保了从相干叠加到热力学行为推演的连续性。
+
+允许在相空间中存在负概率幅（表征微观相干性与量子干涉），同时在强环境退相干 (Decoherence) 极限下，它能够平滑过渡为经典统计力学中纯正值的 Fokker-Planck 概率密度函数。这一数学桥梁确保了从相干叠加到热力学行为推演的连续性。
 
 ## **第二章：预测误差的物理耗散映射与 Lindblad 演化**
 
@@ -48,10 +49,12 @@ PDPP 理论假设，这种基于生存本能的高频神经元预测采样行为
 
 
 $$ \frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right) $$
+
 我们将环境耗散率 $\gamma_k$ 严格映射为自由能 $\mathcal{F}$ 的指数函数：
 
 
 $$ \gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right) $$
+
 当系统处于高自由能（高预测误差/执念）状态时，$\mathcal{F}(t) \gg k_B T$。测量算符占主导，导致 Wigner 函数的非对角元迅速衰减，系统发生瞬间的环境退相干，完全退化为经典马尔可夫演化。
 
 ### **2.2 朗道尔极限与测量作用量 (Bits/Joule)**
@@ -70,6 +73,7 @@ $$ \gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right) $$
 
 
 $$ D = \gamma k_B T $$
+
 扩散系数 $D$ 将随之呈指数级下降。这种内生的底噪冷却机制，极大降低了内部热声子对相位的扰动，为微弱相干态的存续提供了不可或缺的基础热力学条件。
 
 ### **3.2 跨频耦合 (CFC) 与 Fröhlich 凝聚**
@@ -86,6 +90,7 @@ $$ D = \gamma k_B T $$
 
 
 $$ \frac{\partial \rho}{\partial t} = -\nabla \cdot \left[ \mu(x, t, \theta) \rho \right] + \nabla^2 \left[ D(x, t, \epsilon) \rho \right] $$
+
 常规经典物理中，仅仅降低扩散噪声 $D$ 只会导致概率分布向既有的平庸吸引子坍缩。但在 PDPP 框架中，由于 $\theta$ 相角的存续和长程耦合的介入，系统漂移项 $\mu(x, t, \theta)$ 受到了非局域拓扑的参数化调控。
 
 ### **4.2 叉式分岔 (Pitchfork Bifurcation) 的统计涌现**
