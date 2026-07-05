@@ -22,8 +22,8 @@
 ## 📊 算法实证结果
 
 当应用于高阶心智训练者的高精度脑电数据集时，本引擎内置的平稳性检验（ADF）成功拦截了所有的经典非平稳噪声样本（反向负对照），并在阳性样本中取得了极其稳健的统计学因果推断：
-- **拓扑分岔 (Topological Bifurcation)**：$p = 7.43 \times 10^{-14}$
-- **反事实屏蔽与均值回归 (Counterfactual Shielding)**：$p = 3.76 \times 10^{-27}$
+- **拓扑分岔 (Topological Bifurcation)**：p = 7.43 &times; 10<sup>-14</sup>
+- **反事实屏蔽与均值回归 (Counterfactual Shielding)**：p = 3.76 &times; 10<sup>-27</sup>
 
 *（有关算法的数学边界、逻辑互锁证明与实证推断，请参阅 `docs` 文件夹中的主要研究手稿）。*
 

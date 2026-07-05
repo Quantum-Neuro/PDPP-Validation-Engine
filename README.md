@@ -22,8 +22,8 @@ Unlike traditional statistical analysis pipelines, this engine discards all hard
 ## 📊 Empirical Verification Results
 
 When applied to high-precision EEG datasets of advanced mental trainees, the engine's built-in stationarity test (ADF) successfully intercepted all classical non-stationary noise samples (Inverse Negative Controls), and achieved highly robust statistical causal inference in positive samples:
-- **Topological Bifurcation**: $p = 7.43 \times 10^{-14}$
-- **Counterfactual Shielding and Mean Reversion**: $p = 3.76 \times 10^{-27}$
+- **Topological Bifurcation**: p = 7.43 &times; 10<sup>-14</sup>
+- **Counterfactual Shielding and Mean Reversion**: p = 3.76 &times; 10<sup>-27</sup>
 
 *(For the mathematical boundaries, proofs of logical interlocks, and empirical inferences of the algorithm, please refer to the primary research manuscript in the `docs` folder).*
 
