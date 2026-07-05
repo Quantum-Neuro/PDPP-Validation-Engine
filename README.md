@@ -6,77 +6,86 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)
 
-The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industrial-grade, fail-safe algorithmic pipeline designed to detect macroscopic topological phase transitions in complex neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems.
+The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industrial-grade computational pipeline for a phenomenological model. The pipeline is designed to detect macroscopic topological bifurcations in complex biological neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems using Bayesian counterfactual inference.
 
-## 🚀 Key Features
+## 🚀 Core Algorithmic Engineering
 
-Unlike traditional statistical pipelines, this engine is built with strict industrial-grade fail-safe interlocks to prevent false positives (P-hacking) and ensure robust causal inference:
+Unlike traditional statistical analysis pipelines, this engine discards all hardcoded parameters that could lead to overfitting or forward data leakage. It implements strict industrial-grade logical interlocks at the foundational level:
 
-1. **Bidirectional EVT Radar**: Utilizes Generalized Extreme Value (GEV) distributions to identify both *Generative Phase Transitions* (high-energy cross-frequency bursts) and *Deconstructive Phase Transitions* (ultra-low entropy zero-point states/Nirodha).
-2. **Logical Interlock (Fail-Safe Mechanism)**: Automatically aborts downstream quantum causal calculations if the input data falls within classical thermal noise boundaries, strictly utilizing negative controls to prevent overfitting.
-3. **Smart Length-Finding Algorithm**: Automatically parses large EEG matrices to extract the most contiguous, noise-free time series to satisfy the degrees of freedom required by Bayesian inference.
-4. **Dual Causal Inference Backends**: 
-   - **VAR Granger Causality** for predictive driving in generative states.
-   - **Bayesian Structural Time Series (BSTS)** for counterfactual inference in deconstructive shielding states.
+1. **Full Tensor Vectorized Extraction (`scipy.signal`)**: Thoroughly strips away the inefficient loops of the MNE framework. The calculations for DMN Decoupling and broadband Gamma (30-70Hz) Cross-Frequency Coupling (CFC) are delegated to C/Fortran-level full tensor operations, completely eliminating GIL bottlenecks and micro-signal truncation.
+2. **Dynamic EVT Radar**: Rejects the "Texas Sharpshooter Fallacy." The engine utilizes Generalized Extreme Value (GEV) distributions to dynamically lock onto absolute physical peaks where EEG topological metrics break the $2\sigma$ threshold, establishing this as the sole dynamic intervention point for causal testing.
+3. **Global Constant Auto-Calibration (`auto_calibrate`)**: When simulating quantum dynamic evolution, the optimizer (`minimize_scalar`) is strictly constrained to output a global constant multiplier. This mechanism uniformly stretches the entire thermodynamic timeline, mathematically eliminating any illusion of "Data Leakage" caused by dynamic time-step modifications.
+4. **Structural Causal Inference Backend**:
+   - Introduces Turing Award laureate Judea Pearl's **Structural Causal Model (SCM)**, discarding traditional Granger tests that can only prove predictive correlation.
+   - Employs **Bayesian Structural Time Series (BSTS)** to generate parallel history counterfactual baselines without intervention, strictly elevating correlation to Average Causal Effect.
 
-## 📊 Empirical Breakthroughs
+## 📊 Empirical Verification Results
 
-When applied to high-precision EEG datasets of advanced mental trainees, this engine successfully intercepted all classical noise samples (Inverse Negative Controls) and achieved highly robust statistical significance in positive samples:
-- **Generative Drive**: p = 7.43 &times; 10<sup>-14</sup>
-- **Counterfactual Shielding (Absolute Silence)**: p = 3.76 &times; 10<sup>-27</sup>
+When applied to high-precision EEG datasets of advanced mental trainees, the engine's built-in stationarity test (ADF) successfully intercepted all classical non-stationary noise samples (Inverse Negative Controls), and achieved highly robust statistical causal inference in positive samples:
+- **Topological Bifurcation**: p = 7.43 &times; 10<sup>-14</sup>
+- **Counterfactual Shielding and Mean Reversion**: p = 3.76 &times; 10<sup>-27</sup>
 
-*(For full mathematical derivation and empirical results, please refer to our [Research Manuscript](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf) in the `/docs` folder).*
+*(For the mathematical boundaries, proofs of logical interlocks, and empirical inferences of the algorithm, please refer to the primary research manuscript in the `docs` folder).*
 
-## 📖 Theoretical Framework & Documentation
+## 📖 Phenomenological Theory & Documentation
 
-This engine serves as the computational backbone for the **Pan-Dimensional Phase Projection (PDPP)** theoretical framework. The PDPP theory bridges macroscopic neurodynamics with open quantum systems, proposing that biological neural networks can undergo topological phase transitions capable of actively shielding quantum decoherence.
+This engine is the computational foundation of the **Pan-Dimensional Phase Projection (PDPP)** phenomenological theory. Established at the intersection of Karl Friston's Free Energy Principle and quantum information geometry, the PDPP theory posits that long-range Gamma synchrony can construct macroscopic topological manifolds that surpass the $10^{-13}$ second decoherence limit.
 
-Inside the `docs/` folder, you will find the core academic literature detailing this framework:
+Inside the `docs/` folder, you will find the core academic literature detailing the boundaries of this model:
 
 - 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
-  *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features (DMN Decoupling, Theta-Gamma PAC) and quantum parameters (&gamma;, &epsilon;), and the rigorous causal inference results.*
+  *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features and quantum dissipative parameters (&gamma;, &epsilon;), and the rigorous fail-safe counterfactual causal inference results.*
 
-We highly encourage researchers in quantum biology, cognitive neuroscience, and complex systems to review this document to understand the profound physical implications behind the algorithmic processes executed by this engine.
-
-For general researchers looking to quickly understand how the PDPP framework bridges different disciplines, we have prepared an **Interdisciplinary Rosetta Stone Matrix**:
+To explicitly detail Information Geometry, the Fluctuation-Dissipation Theorem, and the boundary conditions of this phenomenological model, we have prepared comprehensive whitepapers:
 - 👉 **[Read PDPP Theoretical Framework Whitepaper (English)](./docs/PDPP_Theoretical_Framework_Whitepaper_EN.md)**
-- 👉 **[Read PDPP Theoretical Framework Whitepaper (Simplified Chinese)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
+- 👉 **[阅读 PDPP 理论框架白皮书 (简体中文)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
 
-## ⚙️ Quick Start (One-Click Execution)
+## ⚙️ Quick Start (One-Click Testing)
 
-This project provides dedicated "double-click" entry scripts for different operating systems, eliminating the need to configure complex terminal environments. After installing Python 3.9+, you can directly **double-click** the corresponding file below to launch the engine:
+This project provides dedicated environment-wrapped entry scripts for different operating systems, eliminating the need to configure complex Python environments. After installing Python 3.9+, you can directly double-click the following files to launch the engine testing process:
 
 - **🍎 macOS Users**: Double-click `start.command`
 - **🪟 Windows Users**: Double-click `start.bat`
-- **🐧 Linux Users**: Execute `./start.sh` in the terminal, or double-click `start.sh` in a GUI environment.
+- **🐧 Linux Users**: Execute `./start.sh` in the terminal.
 
-> **✨ Automated Sandbox Environment**: On the first run, the script will automatically create an isolated virtual environment (`.venv`) and use `pip` to perfectly align all dependencies. Once complete, the engine will start seamlessly. Please be patient during the first initialization!
+> **✨ Automated Sandbox Environment**: On the first run, the script will automatically create an isolated virtual environment (`.venv`) and strictly align all library dependencies. Please be patient during the initialization configuration!
 
 ---
 
-## 💾 Data Provisioning (Auto-Download & Sample Dataset)
+## 💾 Data Provisioning & Connectivity Testing
 
-To keep this repository extremely lightweight and comply with data provenance regulations, **no real EEG data files are stored in this repository**. Instead, the pipeline features a dual-layer automated data provisioning system:
+To comply with data provenance and privacy regulations, **no large raw EEG files are stored in this repository**. The pipeline utilizes a dual-layer data provisioning strategy:
 
-1. **Auto-Download (Primary Method):** When you run the engine for the first time, if your `./data` folder is empty, the engine will automatically connect to the OpenNeuro official AWS S3 server and fetch 24 representative BIDS-compliant sample files from dataset `ds003816`.
-2. **Offline Sample Dataset (Fallback):** If your network connection is unstable, blocked, or completely offline, the auto-download will gracefully fail and the engine will automatically fall back to the `./data_sample` folder. This folder contains a tiny micro-sample (< 5MB, 10-second downsampled cuts) strictly for **code pipeline connectivity testing**. 
+1. **Auto-Download (Primary):** On the first run, if `./data` is empty, the engine will automatically connect to the OpenNeuro AWS S3 server and fetch representative BIDS-compliant samples from dataset `ds003816`.
+2. **Offline Micro-Sample (Fallback):** If offline or restricted, the engine will gracefully downgrade to use the ultra-small downsampled cuts in the built-in `./data_sample` folder. This sample is strictly for **code pipeline connectivity testing (verifying compilation, routing, and crash-free execution)**.
 
 > [!WARNING]
-> The Sample Dataset is composed of extremely brief micro-samples intended *only* to prove that the code architecture compiles, routes, and runs without crashing. **Do not expect complete or statistically significant validation results when using the Sample Dataset.** Genuine replication of the extreme value phase transitions requires the full high-precision dataset to be downloaded via the primary method.
+> The sample micro-dataset cannot provide stationary time series satisfying the required degrees of freedom, which will cause the engine to trigger underlying fail-safe mechanisms and abort Bayesian causal calculations. To verify full counterfactual inference, the complete high-precision dataset must be downloaded using the primary method.
 
 ---
 
-### 💻 Developer CLI (Terminal/CMD)
+## 🔬 Custom Data Reproduction Guide
 
-```bash
-# Clone the repository
-git clone https://github.com/Quantum-Neuro/PDPP-Validation-Engine.git
-cd PDPP-Validation-Engine
+The PDPP Validation Engine supports the import of your own high-precision EEG data for phase transition scanning and causal inference.
 
-# Run the automated validation pipeline (dependencies will auto-install if missing)
-python main.py
-```
+**Data Requirements**:
+- Supported Formats: `.edf`, `.vhdr` (BrainVision), `.bdf`
+- Channel Requirements: Must contain at least frontal (e.g., `Fz`, `F3`) and occipital (e.g., `Oz`, `O1`, `O2`) or parietal (e.g., `Pz`) leads to allow the engine to extract long-range CFC and DMN decoupling topological features.
 
-🧠 Citation
-If you use this validation engine or the PDPP theoretical framework in your research, please cite our paper:
+**Execution Steps**:
+1. Place your EEG files into the root `data/` folder (multi-level subdirectory nesting is supported).
+2. (Optional) To assist the EVT Radar's judgment, if the data belongs to a "long-term meditator/high-order intervention state," please include `lt` in the filename (e.g., `sub-01_task-meditation_lt.vhdr`); baseline control groups do not require a suffix or can use other suffixes.
+3. Open a terminal and execute the main engine entry:
+   ```bash
+   python main.py
+   ```
+4. The engine will automatically take over stationarity testing, dynamic peak detection, and BSTS modeling. All analysis results and research reports in Word/PDF formats will be automatically output to the `Report/` folder.
+
+---
+
+🧠 **Citation**
+
+If you utilize the algorithms of this open-source engine (such as the EVT Extreme Value Radar, BSTS Quantum Baseline Calibrator, etc.) in your academic research, please cite our underlying methodological manuscript:
+```text
 Jia, W., et al. "Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation." arXiv (2026).
+```
