@@ -33,7 +33,7 @@
 
 在 `docs/` 文件夹中，您可以找到详细阐述该模型边界的核心学术文献：
 
-- 📄 **[PDPP_Topological_Shielding_Validation.pdf](./docs/PDPP_Topological_Shielding_Validation.pdf)**
+- 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
   *主要研究手稿。包含了双向 EVT 雷达的完整数学推导、经典脑电特征与量子耗散参数（&gamma;, &epsilon;）之间的拓扑映射方程，以及严谨的防错反事实因果推断结果。*
 
 为了详细解释 Wigner 演化流形、涨落耗散定理及该唯象模型的边界条件，我们准备了详细的白皮书文档：

@@ -20,4 +20,4 @@ These findings provide the first mathematically rigorous empirical evidence for 
 ### 📥 Download Full Paper
 Please click the link below to access the complete mathematical derivations, topological mapping equations, and experimental methodology:
 
-👉 **[View PDF on GitHub](./PDPP_Topological_Shielding_Validation.pdf)**
+👉 **[View PDF on GitHub](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**

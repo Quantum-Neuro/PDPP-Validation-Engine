@@ -21,4 +21,4 @@
 ### 📥 下载完整论文
 请点击下方链接，获取完整的数学推导过程、拓扑映射方程以及实验方法论：
 
-👉 **[GitHub 页面预览 PDF](./PDPP_Topological_Shielding_Validation.pdf)**
+👉 **[GitHub 页面预览 PDF](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**

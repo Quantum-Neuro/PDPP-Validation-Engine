@@ -33,7 +33,7 @@ This engine is the computational foundation of the **Pan-Dimensional Phase Proje
 
 Inside the `docs/` folder, you will find the core academic literature detailing the boundaries of this model:
 
-- 📄 **[PDPP_Topological_Shielding_Validation.pdf](./docs/PDPP_Topological_Shielding_Validation.pdf)**
+- 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
   *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features and quantum dissipative parameters (&gamma;, &epsilon;), and the rigorous fail-safe counterfactual causal inference results.*
 
 To explicitly detail the Wigner evolution manifold, the Fluctuation-Dissipation Theorem, and the boundary conditions of this phenomenological model, we have prepared comprehensive whitepapers:
