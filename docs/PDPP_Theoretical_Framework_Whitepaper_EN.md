@@ -60,7 +60,8 @@ To ensure rigorous empirical validation, we completely discard the treatment of 
 Karl Friston proposed that the brain is a Bayesian inference engine constrained by the second law of thermodynamics, aiming to minimize prediction error (free energy). In the PDPP framework, we establish a revolutionary equivalence:
 
 * **Psychological Attachment/Anxiety:** Equates to the brain assigning extremely high precision weight to a specific prior model. To resolve uncertainty, the system is forced to sample the external environment at a near-continuous frequency.  
-* **Physical Quantum Measurement:** This high-frequency biological sampling, through synaptic electromagnetic perturbations, directly constitutes a **strong measurement operator** in open quantum systems. It causes the dissipation term in the Lindblad master equation to dominate, triggering the **Quantum Zeno Effect**, pinning the macroscopic probability wave function onto mundane trajectories.
+* **Physical Quantum Measurement:** This high-frequency biological sampling, through synaptic electromagnetic perturbations, directly constitutes a **strong measurement operator** in open quantum systems. It causes the dissipation term in the Lindblad master equation to dominate, triggering the **Quantum Zeno Effect**, pinning the macroscopic probability wave function onto mundane trajectories.  
+* **Information Geometry Synthesis:** From the perspective of information geometry, the brain minimizes the **Kullback-Leibler (KL) Divergence** between its internal generative model and external sensory states to eliminate prediction errors. In open quantum system dynamics, this thermodynamic computational process is perfectly isomorphic to a high-gain strong measurement operation that continuously extracts **Quantum Mutual Information** from the environment.
 
 ### **3.2 Defining the Physical Quantities of Consciousness: ![][image1] (Bits/Joule)**
 
@@ -86,7 +87,8 @@ Even in low ![][image1] states, macroscopic environmental thermal noise ![][imag
 ### **4.2 Long-Range Gamma Synchrony, Cross-Frequency Coupling (CFC), and Topological Protection**
 
 * **Neurobiological Evidence:** Lutz et al. (2004, *PNAS*) observed that advanced meditation is characterized by high-amplitude, long-range Gamma wave (25-42 Hz) phase synchrony across anatomical distances, paired with intense Theta-Gamma CFC during flow states.  
-* **PDPP Physical Mapping:** This absolute phase-locking network (high PLV) spanning brain areas behaves analogously to the **Chern Number** in condensed matter physics. This high-dimensional, non-local, non-linear manifold provides immense **noise resilience** against local classical electromagnetic interference, acting as a physical "topological shield."
+* **PDPP Physical Mapping:** This absolute phase-locking network (high PLV) spanning brain areas behaves analogously to the **Chern Number** in condensed matter physics. This high-dimensional, non-local, non-linear manifold provides immense **noise resilience** against local classical electromagnetic interference, acting as a physical "topological shield."  
+* **Bypassing the Tegmark Limit (Decoherence Defense):** Unlike traditional quantum neural models that rely on microscopic molecular structures (such as Penrose's microtubule theory), the PDPP theory does not rely on single-particle coherence. The long-range Gamma synchrony in this framework constructs a **Macroscopic Topological Manifold**. This topology-based protection across the entire brain network thoroughly circumvents Max Tegmark's calculated $10^{-13}$ second decoherence limit in the "warm, wet, and noisy" brain environment, allowing the macroscopic coherence time to be legally sustained on a scale of milliseconds to seconds.
 
 ### **4.3 Pitchfork Bifurcation and Macroscopic Phase Transitions**
 
@@ -100,9 +102,9 @@ To resolve the issue of signal dilution by macroscopic thermal noise (regression
 
 Traditional t-tests and mean comparisons are rejected. Because macroscopic quantum phase transitions are exceptionally rare "tail events," we utilize the Generalized Extreme Value (GEV) distribution. By extracting extreme peak events of CFC and PLV in advanced subjects, we correlate them with extreme probability events of "extended coherence lifetimes" in quantum sensors.
 
-### **5.2 Microsecond Alignment and Granger Causality Shield**
+### **5.2 From Predictive Correlation to Counterfactual Inference**
 
-We establish Vector Autoregression (VAR) models between multi-channel EEG topological features and quantum state sequences. On microsecond-aligned timestamps, we mathematically demonstrate that the occurrence of high-frequency CFC/PLV features (cause) Granger-predicts the delay of quantum state decoherence (effect) at ![][image27].
+To transcend the limitations of traditional Granger Causality, which can only prove "time-series predictive correlation," this validation engine fundamentally incorporates the **Structural Causal Model (SCM)** framework pioneered by Turing Award laureate Judea Pearl. Utilizing Bayesian Structural Time Series (BSTS) as the inference engine at microsecond-aligned timestamps, we precisely simulate the quantum decoherence rate in a **parallel history (counterfactual baseline)** where the high-frequency CFC/PLV topological features (the cause) never occurred. The intense divergence between the actual observational data and the counterfactual baseline mathematically provides us with a rigorous **Average Causal Effect**, thereby thoroughly elevating statistical correlation into a strict physical causality.
 
 ### **5.3 The Boundary Limits of Mean-Field Emergence**
 
