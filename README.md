@@ -29,14 +29,14 @@ When applied to high-precision EEG datasets of advanced mental trainees, the eng
 
 ## 📖 Phenomenological Theory & Documentation
 
-This engine is the computational foundation of the **Pan-Dimensional Phase Projection (PDPP)** phenomenological theory. Established at the intersection of Karl Friston's Free Energy Principle and quantum information geometry, the PDPP theory posits that long-range Gamma synchrony can construct macroscopic topological manifolds that surpass the $10^{-13}$ second decoherence limit.
+This engine is the computational foundation of the **Pan-Dimensional Phase Projection (PDPP)** phenomenological theory. The PDPP model employs the Wigner pseudo-probability function as a cross-scale bridge, mapping Bayesian prediction errors (Friston Free Energy) to environmental dissipation constrained by Landauer's Principle. The model posits that long-range Gamma cross-frequency coupling induces a Decoherence-Free Subspace (DFS) analogous to Fröhlich Condensation, constructing macroscopic topological manifolds via Pitchfork Bifurcation to surpass the $10^{-13}$ second decoherence limit.
 
 Inside the `docs/` folder, you will find the core academic literature detailing the boundaries of this model:
 
 - 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
   *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features and quantum dissipative parameters (&gamma;, &epsilon;), and the rigorous fail-safe counterfactual causal inference results.*
 
-To explicitly detail Information Geometry, the Fluctuation-Dissipation Theorem, and the boundary conditions of this phenomenological model, we have prepared comprehensive whitepapers:
+To explicitly detail the Wigner evolution manifold, the Fluctuation-Dissipation Theorem, and the boundary conditions of this phenomenological model, we have prepared comprehensive whitepapers:
 - 👉 **[Read PDPP Theoretical Framework Whitepaper (English)](./docs/PDPP_Theoretical_Framework_Whitepaper_EN.md)**
 - 👉 **[阅读 PDPP 理论框架白皮书 (简体中文)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
 

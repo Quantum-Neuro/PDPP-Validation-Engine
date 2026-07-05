@@ -29,14 +29,14 @@
 
 ## 📖 唯象理论框架与文档
 
-本引擎是**泛维度相位投影（PDPP）**唯象理论的计算实现基座。PDPP 理论建立在 Karl Friston 自由能原理与量子信息几何的交汇点，主张长程 Gamma 同步可以构建跨越 $10^{-13}$ 秒退相干极限的宏观拓扑流形。
+本引擎是**泛维度相位投影（PDPP）**唯象理论的计算实现基座。PDPP 模型采用 Wigner 伪概率函数作为跨尺度桥梁，将大脑的贝叶斯预测误差（Friston 自由能）映射为受朗道尔原理约束的环境耗散。模型主张长程 Gamma 跨频耦合可诱发类似于 Fröhlich 凝聚的退相干无耗散子空间 (DFS)，从而通过叉式分岔 (Pitchfork Bifurcation) 构建跨越 $10^{-13}$ 秒退相干极限的宏观拓扑流形。
 
 在 `docs/` 文件夹中，您可以找到详细阐述该模型边界的核心学术文献：
 
 - 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
   *主要研究手稿。包含了双向 EVT 雷达的完整数学推导、经典脑电特征与量子耗散参数（&gamma;, &epsilon;）之间的拓扑映射方程，以及严谨的防错反事实因果推断结果。*
 
-为了详细解释信息几何、涨落耗散定理及该唯象模型的边界条件，我们准备了详细的白皮书文档：
+为了详细解释 Wigner 演化流形、涨落耗散定理及该唯象模型的边界条件，我们准备了详细的白皮书文档：
 - 👉 **[阅读 PDPP 理论框架白皮书 (简体中文)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
 - 👉 **[Read PDPP Theoretical Framework Whitepaper (English)](./docs/PDPP_Theoretical_Framework_Whitepaper_EN.md)**
 

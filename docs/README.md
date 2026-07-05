@@ -9,7 +9,7 @@
 **Weili Jia**  
 
 ### 🔬 Abstract
-The interface between macroscopic neurodynamics and open quantum systems remains critically underexplored, primarily due to the inherent vulnerability of quantum states to environmental decoherence. In this study, we introduce the Pan-Dimensional Phase Projection (PDPP) phenomenological model and empirically validate its core postulate: biological neural networks can undergo macroscopic topological bifurcations that actively shield against quantum dissipation.
+The interface between macroscopic neurodynamics and open quantum systems remains critically underexplored, primarily due to the inherent vulnerability of quantum states to environmental decoherence. In this study, we introduce the Pan-Dimensional Phase Projection (PDPP) phenomenological computational model. Integrating the Wigner pseudo-probability function, Friston Free Energy, and Landauer's Principle, the model hypothesizes a Decoherence-Free Subspace (DFS) analogous to Fröhlich Condensation. We empirically validate its core deduction: biological neural networks can undergo macroscopic topological evolution via Pitchfork Bifurcations to actively shield against quantum dissipation.
 
 To overcome the pervasive issue of false positives in neuro-quantum correlations, we engineered a fail-safe algorithmic pipeline incorporating Bidirectional Extreme Value Theory (EVT) and Bayesian Structural Time Series (BSTS). By strictly treating classical thermal noise as inverse negative controls, the engine interlocks against spurious inferences.
 
