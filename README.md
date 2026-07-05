@@ -40,7 +40,7 @@ We highly encourage researchers in quantum biology, cognitive neuroscience, and 
 
 For general researchers looking to quickly understand how the PDPP framework bridges different disciplines, we have prepared an **Interdisciplinary Rosetta Stone Matrix**:
 - 👉 **[Read PDPP Theoretical Framework Whitepaper (English)](./docs/PDPP_Theoretical_Framework_Whitepaper_EN.md)**
-- 👉 **[阅读 PDPP 理论框架白皮书 (简体中文)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
+- 👉 **[Read PDPP Theoretical Framework Whitepaper (Simplified Chinese)](./docs/PDPP_Theoretical_Framework_Whitepaper_ZH.md)**
 
 ## ⚙️ Quick Start (One-Click Execution)
 
