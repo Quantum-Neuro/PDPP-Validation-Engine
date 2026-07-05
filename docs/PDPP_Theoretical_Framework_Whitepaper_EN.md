@@ -97,7 +97,7 @@ In conventional classical physics, merely reducing diffusion noise $D$ only caus
 
 The parametric distortion of the drift term $\mu$ triggers a **Pitchfork Bifurcation** in non-linear dynamics. The potential energy surface undergoes fundamental topological remodeling, inducing novel high-energy or low-entropy attractors. Reflected via Extreme Value Theory (EVT), the system exhibits Extreme Heavy-tailed Anomalies that severely deviate from Gaussian white noise in specific physical metrics.
 
-## **Chapter 5: Industrial-Grade Empirical Validation Engine (V3.0)**
+## **Chapter 5: Industrial-Grade Empirical Validation Engine**
 
 The legitimacy of any cross-disciplinary theory must withstand the rigorous scrutiny of signal processing science. The PDPP framework deploys a verification engine equipped with strict fault-interlocks and data-leakage isolation mechanisms to ensure empirical results are not statistical illusions.
 
