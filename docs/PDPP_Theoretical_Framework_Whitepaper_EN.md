@@ -2,7 +2,7 @@
 
 ### **——A Unified Neuro-Quantum Framework Based on Continuous Weak Measurement, Free Energy Principle, and Non-Linear Information Dynamics**
 
-**Version:** v3.0 (Comprehensive Unified Edition)
+**Version:** v3.0
 
 **Status:** Unified physical underlying mechanisms and computational neuroscience, containing rigorous physical dimensions and extreme-value causal criteria, prepared for interdisciplinary peer review.
 
