@@ -4,7 +4,7 @@
 
 **Version:** v3.0
 
-**Status:** Unified physical underlying mechanisms and computational neuroscience, containing rigorous physical dimensions and extreme-value causal criteria, prepared for interdisciplinary peer review.
+**Status:** Unified physical underlying mechanisms and computational neuroscience, containing rigorous physical dimensions and extreme-value causal criteria, prepared for top-tier academic journals peer review.
 
 **Author:** Weili Jia (*Independent Quantum Cognitive Laboratory*)
 
@@ -49,7 +49,7 @@ At the moment of the system's first strong coupling with the macroscopic environ
 
 The transition probability ![][image18] of a macroscopic reality state strictly follows the Feynman Path Integral formulation:
 
-![][image19]In classical determinism, the system evolves only along a single classical path where the action ![][image20] is minimized. In the PDPP framework, however, when the observer suspends forced environmental measurements through "visual inwardness" and enters neural coherence, the physical consequence is that a vast array of **"marginal history paths" (long-tail, low-probability events)** that would normally cancel out under strong measurement are preserved. These paths legally participate in the superposition of probability amplitudes, causing the probability density distribution to undergo extreme topological deformation (heavy right-skewness), opening up mathematical space for macroscopic "miraculous transitions."
+![][image19]In classical determinism, the system evolves solely along a single classical path where the action ![][image20] is minimized. However, under the PDPP framework, when subjective consciousness enters a deep neural coherence state via "visual closure," the observer actively suspends mandatory physical measurements of the environment. The physical result of this action is that a large number of non-classical paths (long-tail probability events) that would have collapsed due to **decoherence** under environmental "strong measurement" are retained and legally participate in the coherent superposition of probability amplitudes. The topological morphology of the probability density distribution thus undergoes severe asymmetrical deformation (extreme right Skewness), providing the necessary statistical space for macroscopic "miracle transitions."
 
 ## **Chapter 3: The Free Energy Principle and Microscopic Measurement Mechanisms**
 
@@ -66,7 +66,7 @@ Karl Friston proposed that the brain is a Bayesian inference engine constrained 
 
 Based on this mechanism, we define the absolute physical unit of cognitive intervention—the **Neurological Measurement Action (![][image1])**:
 
-![][image21]measured in **Bits/Joule**. It represents the amount of environmental quantum mutual information (![][image22]) extracted or exchanged per Joule of metabolic thermodynamic energy (![][image23]) expended by the carbon-based brain.
+![][image21]Its unit is **Bits/Joule**. This dimension is strictly governed by **Landauer's Principle** in non-equilibrium statistical mechanics, establishing the minimum thermodynamic energy cost for neurons to erase or acquire Shannon information. It represents the amount of quantum mutual information (![][image22]) that a carbon-based brain can extract or exchange from the external physical environment per joule of metabolic thermodynamic energy (![][image23]) consumed.
 
 * **High ![][image1]:** The system is locked in a high-energy, anxious "strong-measurement state," completely bound by classical thermodynamic causality.  
 * **Low ![][image1] (Approaching 0):** The observer suspends prior predictions, cuts off mutual information extraction, and lifts decoherence locks, releasing the system's quantum coherence.
@@ -81,7 +81,7 @@ Even in low ![][image1] states, macroscopic environmental thermal noise ![][imag
 * **PDPP Physical Mapping:** The DMN is the physiological heat source of cognitive noise. Its decoupling physically equates to a rapid **cooling of internal thermal fluctuations**.  
 * **Equation Formulation:** The evolution of the 3D reality PDF ![][image8] is governed by the Fokker-Planck equation:  
   ![][image25]  
-  DMN decoupling exponentially cools the noise coefficient ![][image24] in the diffusion term ![][image26], clearing the thermodynamic obstacles for preserving fragile macroscopic coherence.
+  According to the **Fluctuation-Dissipation Theorem**, the decoupling of the DMN directly causes the system background noise coefficient ![][image24] in the diffusion term ![][image26] to exponentially decrease, clearing the internal thermodynamic obstacles for maintaining extremely weak macroscopic coherence.
 
 ### **4.2 Long-Range Gamma Synchrony, Cross-Frequency Coupling (CFC), and Topological Protection**
 

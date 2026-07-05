@@ -4,7 +4,7 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)]()
+![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)
 
 The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industrial-grade, fail-safe algorithmic pipeline designed to detect macroscopic topological phase transitions in complex neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems.
 
@@ -21,7 +21,7 @@ Unlike traditional statistical pipelines, this engine is built with strict indus
 
 ## 📊 Empirical Breakthroughs
 
-When applied to high-precision EEG datasets of advanced mental trainees, this engine successfully intercepted all classical noise samples (Inverse Negative Controls) and achieved unprecedented statistical significance in positive samples:
+When applied to high-precision EEG datasets of advanced mental trainees, this engine successfully intercepted all classical noise samples (Inverse Negative Controls) and achieved highly robust statistical significance in positive samples:
 - **Generative Drive**: p = 7.43 &times; 10<sup>-14</sup>
 - **Counterfactual Shielding (Absolute Silence)**: p = 3.76 &times; 10<sup>-27</sup>
 
