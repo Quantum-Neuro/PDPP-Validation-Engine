@@ -4,7 +4,7 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)
+[![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)](https://arxiv.org)
 
 The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industrial-grade computational pipeline for a phenomenological model. The pipeline is designed to detect macroscopic topological bifurcations in complex biological neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems using Bayesian counterfactual inference.
 
@@ -22,8 +22,8 @@ Unlike traditional statistical analysis pipelines, this engine discards all hard
 ## 📊 Empirical Verification Results
 
 When applied to high-precision EEG datasets of advanced mental trainees, the engine's built-in stationarity test (ADF) successfully intercepted all classical non-stationary noise samples (Inverse Negative Controls), and achieved highly robust statistical causal inference in positive samples:
-- **Topological Bifurcation**: p = 7.43 &times; 10<sup>-14</sup>
-- **Counterfactual Shielding and Mean Reversion**: p = 3.76 &times; 10<sup>-27</sup>
+- **Topological Bifurcation**: $p = 7.43 \times 10^{-14}$
+- **Counterfactual Shielding and Mean Reversion**: $p = 3.76 \times 10^{-27}$
 
 *(For the mathematical boundaries, proofs of logical interlocks, and empirical inferences of the algorithm, please refer to the primary research manuscript in the `docs` folder).*
 
@@ -33,7 +33,7 @@ This engine is the computational foundation of the **Pan-Dimensional Phase Proje
 
 Inside the `docs/` folder, you will find the core academic literature detailing the boundaries of this model:
 
-- 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
+- 📄 **[PDPP_Topological_Shielding_Validation.pdf](./docs/PDPP_Topological_Shielding_Validation.pdf)**
   *The primary research manuscript. It contains the full mathematical derivations of the Bidirectional EVT Radar, the topological mapping equations between classical EEG features and quantum dissipative parameters (&gamma;, &epsilon;), and the rigorous fail-safe counterfactual causal inference results.*
 
 To explicitly detail the Wigner evolution manifold, the Fluctuation-Dissipation Theorem, and the boundary conditions of this phenomenological model, we have prepared comprehensive whitepapers:
@@ -56,7 +56,7 @@ This project provides dedicated environment-wrapped entry scripts for different 
 
 To comply with data provenance and privacy regulations, **no large raw EEG files are stored in this repository**. The pipeline utilizes a dual-layer data provisioning strategy:
 
-1. **Auto-Download (Primary):** On the first run, if `./data` is empty, the engine will automatically connect to the OpenNeuro AWS S3 server and fetch representative BIDS-compliant samples from dataset `ds003816`.
+1. **Auto-Download (Primary):** On the first run, if `./data` is empty, the engine will automatically connect to the OpenNeuro AWS S3 server and fetch representative BIDS-compliant samples from dataset `ds003816` *(We gratefully acknowledge the original authors of ds003816 for releasing this dataset into the public domain)*.
 2. **Offline Micro-Sample (Fallback):** If offline or restricted, the engine will gracefully downgrade to use the ultra-small downsampled cuts in the built-in `./data_sample` folder. This sample is strictly for **code pipeline connectivity testing (verifying compilation, routing, and crash-free execution)**.
 
 > [!WARNING]

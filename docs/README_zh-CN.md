@@ -14,11 +14,11 @@
 
 为了克服神经与量子相关性研究中普遍存在的假阳性问题，我们工程化地构建了一个具备故障安全（fail-safe）机制的算法管线，该管线融合了双向极值理论（EVT）与贝叶斯结构时间序列（BSTS）。通过严格将经典热噪声作为反向负对照处理，该引擎在逻辑层面实现了互锁，彻底杜绝了虚假的因果推断。
 
-通过分析高频脑电（EEG）矩阵，我们在实证中分离出了两种截然不同的拓扑状态。首先，*生成性相变（Generative Phase Transitions）*表现出强大的预测驱动力（p = 7.43 &times; 10<sup>-14</sup>）。更为关键的是，我们识别出了*解构性相变（Deconstructive Phase Transitions）*——其特征为超低熵的零点状态——该状态对模拟的量子退相干算符施加了非经典的因果屏蔽效应。这种拓扑屏蔽效应达到了极度稳健的统计学显著性水平：**p = 3.76 &times; 10<sup>-27</sup>**。
+通过分析高频脑电（EEG）矩阵，我们在实证中分离出了两种截然不同的拓扑状态。首先，*生成性相变（Generative Phase Transitions）*表现出强大的预测驱动力（$p = 7.43 \times 10^{-14}$）。更为关键的是，我们识别出了*解构性相变（Deconstructive Phase Transitions）*——其特征为超低熵的零点状态——该状态对模拟的量子退相干算符施加了非经典的因果屏蔽效应。这种拓扑屏蔽效应达到了极度稳健的统计学显著性水平：**$p = 3.76 \times 10^{-27}$**。
 
 这些发现为该唯象模型提供了首个严谨的数学实证证据，证明人类神经系统的功能不仅仅是一个经典的物理信息处理器，更是一个能够与量子相干性进行交互并对其进行动态保护的拓扑屏蔽层。
 
 ### 📥 下载完整论文
 请点击下方链接，获取完整的数学推导过程、拓扑映射方程以及实验方法论：
 
-👉 **[GitHub 页面预览 PDF](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
+👉 **[GitHub 页面预览 PDF](./PDPP_Topological_Shielding_Validation.pdf)**

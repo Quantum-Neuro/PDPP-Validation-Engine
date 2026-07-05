@@ -4,7 +4,7 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)
+[![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)](https://arxiv.org)
 
 **泛维度相位投影（PDPP）验证引擎**是一个工业级的唯象模型（Phenomenological Model）计算管线。该管线旨在检测复杂生物神经系统（EEG/MEG）中的宏观拓扑分岔（Topological Bifurcation），并利用贝叶斯反事实推断量化其对模拟开放量子系统产生的非经典因果屏蔽效应。
 
@@ -22,8 +22,8 @@
 ## 📊 算法实证结果
 
 当应用于高阶心智训练者的高精度脑电数据集时，本引擎内置的平稳性检验（ADF）成功拦截了所有的经典非平稳噪声样本（反向负对照），并在阳性样本中取得了极其稳健的统计学因果推断：
-- **拓扑分岔 (Topological Bifurcation)**：p = 7.43 &times; 10<sup>-14</sup>
-- **反事实屏蔽与均值回归 (Counterfactual Shielding)**：p = 3.76 &times; 10<sup>-27</sup>
+- **拓扑分岔 (Topological Bifurcation)**：$p = 7.43 \times 10^{-14}$
+- **反事实屏蔽与均值回归 (Counterfactual Shielding)**：$p = 3.76 \times 10^{-27}$
 
 *（有关算法的数学边界、逻辑互锁证明与实证推断，请参阅 `docs` 文件夹中的主要研究手稿）。*
 
@@ -33,7 +33,7 @@
 
 在 `docs/` 文件夹中，您可以找到详细阐述该模型边界的核心学术文献：
 
-- 📄 **[PDPP_Topological_Shielding_Validation.pdf](https://cdn.jsdelivr.net/gh/Quantum-Neuro/PDPP-Validation-Engine@main/docs/PDPP_Topological_Shielding_Validation.pdf)**
+- 📄 **[PDPP_Topological_Shielding_Validation.pdf](./docs/PDPP_Topological_Shielding_Validation.pdf)**
   *主要研究手稿。包含了双向 EVT 雷达的完整数学推导、经典脑电特征与量子耗散参数（&gamma;, &epsilon;）之间的拓扑映射方程，以及严谨的防错反事实因果推断结果。*
 
 为了详细解释 Wigner 演化流形、涨落耗散定理及该唯象模型的边界条件，我们准备了详细的白皮书文档：
@@ -56,7 +56,7 @@
 
 为了遵守数据溯源与隐私合规要求，**本仓库内未存储任何真实的脑电原始大文件**。管线采用双层数据获取策略：
 
-1. **自动拉取（首选）：** 首次运行且 `./data` 为空时，引擎将自动连接至 OpenNeuro AWS S3 服务器，提取 `ds003816` 数据集中符合 BIDS 标准的代表性样本。
+1. **自动拉取（首选）：** 首次运行且 `./data` 为空时，引擎将自动连接至 OpenNeuro AWS S3 服务器，提取 `ds003816` 数据集中符合 BIDS 标准的代表性样本 *(我们对 ds003816 原始数据集构建者将其公开于公有领域表示诚挚谢意)*。
 2. **离线微小样本（备选）：** 若离线或受限，引擎将降级使用内置的 `./data_sample` 文件夹中的极微小降采样截断文件。该样本仅用于**代码管线连通性测试（验证编译、路由和无崩溃）**。
 
 > [!WARNING]
