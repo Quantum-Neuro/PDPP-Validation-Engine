@@ -98,10 +98,14 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
         
         t_eeg = np.linspace(0, 10.0, len(sample_cfc_ts))
         
-        # Dynamic Detection of Intervention Point (Radar Lock-on)
-        # Avoid "Texas Sharpshooter Fallacy" by finding the first CFC topological spike > 2 sigma
-        cfc_mean = np.mean(sample_cfc_ts)
-        cfc_std = np.std(sample_cfc_ts)
+        # Retrospective Anomaly Detection (Avoiding Lookahead Bias)
+        # Calculate baseline statistics strictly on the first 30% of data to prevent forward data leakage
+        baseline_len = max(5, int(len(sample_cfc_ts) * 0.30))
+        cfc_baseline = sample_cfc_ts[:baseline_len]
+        cfc_mean = np.mean(cfc_baseline)
+        cfc_std = np.std(cfc_baseline)
+        
+        # Scan for the first 2-sigma spike as the intervention trigger
         spike_indices = np.where(sample_cfc_ts > cfc_mean + 2.0 * cfc_std)[0]
         
         if len(spike_indices) > 0:
@@ -109,9 +113,15 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
         else:
             intervention_idx = len(gamma) // 2
             
-        # Ensure minimum baseline for time series inference
-        if intervention_idx < 5:
-            intervention_idx = 5
+        # Logical Boundary Interlock (Fail-Safe)
+        # Prevent BSTS crash or hallucinations due to insufficient baseline or post-intervention data
+        if intervention_idx < 10 or (len(sample_cfc_ts) - intervention_idx) < 5:
+            doc.add_paragraph("[Level 2 Validation Failed]: Insufficient valid causal space for BSTS (Spike too close to boundary). Aborting causal inference.")
+            p = doc.add_paragraph("-> SYSTEM INTERLOCK: Retrospective boundary crash prevented.")
+            p.runs[0].font.color.rgb = docx.shared.RGBColor(255, 0, 0)
+            report_path = os.path.join(report_dir, f"PDPP_v3_Validation_Report_{timestamp}.docx")
+            doc.save(report_path)
+            return report_path
 
         if mode == 'granger':
             calibrated_mode = quantum_module.auto_calibrate_gamma_for_granger(t_eeg, gamma, epsilon, target_final_purity=0.52)

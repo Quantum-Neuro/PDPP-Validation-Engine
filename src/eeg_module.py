@@ -108,8 +108,10 @@ def process_local_eeg(filepath):
     else:
         raw = mne.io.read_raw_edf(filepath, preload=True, verbose=False)
         
-    # Extremely mild DC removal and anti-mains interference filtering
-    raw.filter(l_freq=0.5, h_freq=50.0, fir_design='firwin', phase='zero', verbose=False)
+    # Surgical Mains Interference Removal (50Hz/60Hz)
+    raw.notch_filter(freqs=[50, 60], fir_design='firwin', phase='zero', verbose=False)
+    # Broaden upper bandpass limit to 100Hz to preserve Gamma band physics, avoiding filter collisions
+    raw.filter(l_freq=0.5, h_freq=100.0, fir_design='firwin', phase='zero', verbose=False)
     
     sfreq = raw.info['sfreq']
     
