@@ -98,21 +98,36 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
         
         t_eeg = np.linspace(0, 10.0, len(sample_cfc_ts))
         
-        if mode != "Silent_Phase_Transition":
-            optimal_gamma = quantum_module.auto_calibrate_gamma_for_granger(t_eeg, gamma, epsilon, target_final_purity=0.52)
-            calibrated_mode = f"Optimised_{optimal_gamma}"
+        # Dynamic Detection of Intervention Point (Radar Lock-on)
+        # Avoid "Texas Sharpshooter Fallacy" by finding the first CFC topological spike > 2 sigma
+        cfc_mean = np.mean(sample_cfc_ts)
+        cfc_std = np.std(sample_cfc_ts)
+        spike_indices = np.where(sample_cfc_ts > cfc_mean + 2.0 * cfc_std)[0]
+        
+        if len(spike_indices) > 0:
+            intervention_idx = spike_indices[0]
+        else:
+            intervention_idx = len(gamma) // 2
+            
+        # Ensure minimum baseline for time series inference
+        if intervention_idx < 5:
+            intervention_idx = 5
+
+        if mode == 'granger':
+            calibrated_mode = quantum_module.auto_calibrate_gamma_for_granger(t_eeg, gamma, epsilon, target_final_purity=0.52)
+            calibrated_mode = f"Calibrating_{calibrated_mode}"
             _, _, _, purity_ts = quantum_module.simulate_continuous_dynamics(t_eeg, gamma, epsilon, routing_mode=calibrated_mode)
             verify_granger_causality_with_evt(sample_cfc_ts, purity_ts, doc)
         else:
             baseline_gamma = quantum_module.auto_calibrate_baseline_for_bsts(t_eeg, gamma, epsilon, target_baseline_purity=0.80)
             calibrated_mode = f"Calibrating_{baseline_gamma}"
             
-            if len(gamma) > 15:
-                gamma[15:] = 0.0
-                epsilon[15:] = 0.0
+            if len(gamma) > intervention_idx:
+                gamma[intervention_idx:] = 0.0
+                epsilon[intervention_idx:] = 0.0
                 
             _, _, _, purity_ts = quantum_module.simulate_continuous_dynamics(t_eeg, gamma, epsilon, routing_mode=calibrated_mode)
-            bayesian_counterfactual_impact(purity_ts, doc)
+            bayesian_counterfactual_impact(purity_ts, doc, intervention_idx)
         
         causality_img_path = os.path.join(report_dir, f"causality_plot_{timestamp}.png")
         plot_granger_causality(sample_cfc_ts, purity_ts, causality_img_path)

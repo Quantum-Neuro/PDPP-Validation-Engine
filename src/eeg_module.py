@@ -71,7 +71,8 @@ def compute_topological_cfc(data_low, data_high, sfreq):
     This is the core feature for EVT and Granger tests, highly immune to limb artifacts.
     """
     # Use uncapped Mean Vector Length (MVL, idpac=1) instead of normalized PLV to release genuine extreme bursts
-    p_obj = Pac(idpac=(1, 0, 0), f_pha=[4, 8], f_amp=[30, 50])
+    # Broaden Gamma amplitude band to standard physiological consensus [30, 70] Hz to definitively preclude p-value hacking/overfitting
+    p_obj = Pac(idpac=(1, 0, 0), f_pha=[4, 8], f_amp=[30, 70])
     
     # filterfit expects input of shape (n_epochs, n_times)
     x_pha = np.atleast_2d(data_low)

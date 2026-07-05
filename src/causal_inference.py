@@ -39,7 +39,7 @@ def plot_granger_causality(neural_metric_ts, quantum_purity_ts, save_path):
     plt.savefig(save_path, dpi=300, bbox_inches='tight', facecolor='#1e1e1e')
     plt.close()
 
-def bayesian_counterfactual_impact(quantum_purity, doc, intervention_idx=15):
+def bayesian_counterfactual_impact(quantum_purity, doc, intervention_idx):
     doc.add_heading('Bayesian Counterfactual Shielding Effect Test (BSTS Causal Impact)', level=2)
     doc.add_paragraph("In ultra-low entropy silent systems, the conventional Granger causality model fails. System switching to Bayesian Structural Time Series (STS) counterfactual inference engine.")
     
