@@ -1,6 +1,6 @@
 # **泛维度相位投影理论 (PDPP)：一种跨尺度神经干预的唯象计算模型与实证框架**
 
-**版本 (Version):** v4.2 (唯象模型完备与实证对齐版)
+**版本 (Version):** v4.2
 
 **文档状态:** 理论架构与实证工程管线说明书
 
@@ -80,7 +80,7 @@ PDPP 理论假设，这种基于生存本能的高频神经元预测采样行为
 
 ### **4.2 叉式分岔 (Pitchfork Bifurcation) 的统计涌现**
 
-漂移项 ![][image20] 的参数畸变将触发非线性动力学中的**叉式分岔 (Pitchfork Bifurcation)**。系统的势能面拓扑结构发生根本性重塑，诱导出全新的高能或低熵吸引子。这种宏观相变反映在统计极值理论中，即是系统在特定物理量上涌现出极度偏离高斯白噪声的 Freak Wave（畸形长尾波）。
+漂移项 ![][image20] 的参数畸变将触发非线性动力学中的**叉式分岔 (Pitchfork Bifurcation)**。系统的势能面拓扑结构发生根本性重塑，诱导出全新的高能或低熵吸引子。这种宏观相变反映在统计极值理论中，即是系统在特定物理量上涌现出极度偏离高斯白噪声的极端肥尾异常 (Extreme Heavy-tailed Anomalies)。
 
 ## **第五章：工业级实证验证引擎 (V3.0)**
 
@@ -109,7 +109,7 @@ PDPP 理论假设，这种基于生存本能的高频神经元预测采样行为
 | 主动推断与高预测误差 (Friston 自由能) | 对环境的高频“强测量”算符 | 高能耗、高热力学熵状态 | 默认模式网络连通性指数 (DMN Decoupling Index) |
 | 全脑长程 Gamma 相位同步 | 建立退相干无耗散子空间 (DFS) | 宏观 Fröhlich 凝聚态 / 拓扑绝缘相 | 锁相值 (Long-range PLV) |
 | 低频包裹高频的神经振荡嵌套 | 抵抗环境退相干的局域免疫力 | 拓扑陈数 (Chern Number) 与抗微扰特性 | Theta-Gamma 跨频段相位-振幅耦合 (CFC Modulation Index) |
-| 执念消除 (极度深定 / Nirodha) | 耗散率 ![][image9] 逼近于 0，释放量子相干 | 涨落耗散定理主导的底噪冷却机制 | 神经拓扑时间序列极值 (![][image1] Peak / 左尾极度塌缩) |
+| 先验预测悬置 (Suspension of Prior Predictions / 深层 DMN 解耦) | 耗散率 ![][image9] 逼近于 0，释放量子相干 | 涨落耗散定理主导的底噪冷却机制 | 神经拓扑时间序列极值 (![][image1] Peak / 左尾极度塌缩) |
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAABEklEQVR4Xu1ROwrCQBBVQQQtxEICMWRDyA1SWChYitYexUILGz2C4AW8jGBnK9iL1v7Az5uYlXFcJYWdPniw8+bN7OxOKvXH1+C6bl0ptQWv4AxSRnoSAw3G4ITFO2qMS3zuSwwq9jyvKjUi1xLBsqyCqdikJQYKR3heTWgfG+JFDeRbYFsTWlP6HogbXgz6XF9movRHwE0LStq2nec6tBV4wDFNseM4FfL5vl/kvifQcsgUBEGZ6/iSjmkC0lDTl3oEFJXiZjmZi5+0fKN3pU7IyAkQT9mZCls8jwFC0sMwzHI9gjIv4MzOpj/dgGuu6cQpnuCFzEPFAxYPwaOOH9CbesM996r7lqMcFtHjuT9+CTdITWkcAvJZ3AAAAABJRU5ErkJggg==>
 

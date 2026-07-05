@@ -1,6 +1,6 @@
 # **Pan-Dimensional Phase Projection Theory (PDPP): A Phenomenological Computational Model and Empirical Framework for Cross-Scale Neural Intervention**
 
-**Version:** v4.2 (Complete Phenomenological Model & Empirical Alignment)
+**Version:** v4.2
 
 **Document Status:** Theoretical Architecture and Empirical Engineering Pipeline Specification
 
@@ -80,7 +80,7 @@ Protected by the DFS, the Wigner function is approximated at the macroscopic sca
 
 ### **4.2 Statistical Emergence of Pitchfork Bifurcation**
 
-The parametric distortion of the drift term ![][image20] triggers a **Pitchfork Bifurcation** in non-linear dynamics. The potential energy surface undergoes fundamental topological remodeling, inducing novel high-energy or low-entropy attractors. Reflected via Extreme Value Theory (EVT), the system exhibits Freak Waves (heavy-tail distributions) that severely deviate from Gaussian white noise in specific physical metrics.
+The parametric distortion of the drift term ![][image20] triggers a **Pitchfork Bifurcation** in non-linear dynamics. The potential energy surface undergoes fundamental topological remodeling, inducing novel high-energy or low-entropy attractors. Reflected via Extreme Value Theory (EVT), the system exhibits Extreme Heavy-tailed Anomalies that severely deviate from Gaussian white noise in specific physical metrics.
 
 ## **Chapter 5: Industrial-Grade Empirical Validation Engine (V3.0)**
 
@@ -109,7 +109,7 @@ This matrix demonstrates how the PDPP theory aligns concepts across computationa
 | Active Inference & High Prediction Error (Friston Free Energy) | High-frequency "Strong Measurement" operators on the environment | High energy consumption, high thermodynamic entropy states | Default Mode Network Decoupling Index (DMN) |
 | Whole-brain long-range Gamma phase synchronization | Establishment of Decoherence-Free Subspace (DFS) | Macroscopic Fröhlich Condensation / Topological Insulator Phase | Phase Locking Value (Long-range PLV) |
 | Low-frequency nested high-frequency neural oscillations | Local immunity resisting environmental decoherence | Chern Number topology and anti-perturbation properties | Theta-Gamma Cross-Frequency Phase-Amplitude Coupling (CFC Modulation Index) |
-| Fixation Elimination (Deep stillness / Nirodha) | Dissipation rate ![][image9] approaches 0, releasing quantum coherence | Noise-cooling mechanism dominated by Fluctuation-Dissipation Theorem | Neural Topological Time-series Extremes (![][image1] Peak / Left-tail collapse) |
+| Suspension of Prior Predictions (Deep DMN Decoupling) | Dissipation rate ![][image9] approaches 0, releasing quantum coherence | Noise-cooling mechanism dominated by Fluctuation-Dissipation Theorem | Neural Topological Time-series Extremes (![][image1] Peak / Left-tail collapse) |
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAABEklEQVR4Xu1ROwrCQBBVQQQtxEICMWRDyA1SWChYitYexUILGz2C4AW8jGBnK9iL1v7Az5uYlXFcJYWdPniw8+bN7OxOKvXH1+C6bl0ptQWv4AxSRnoSAw3G4ITFO2qMS3zuSwwq9jyvKjUi1xLBsqyCqdikJQYKR3heTWgfG+JFDeRbYFsTWlP6HogbXgz6XF9movRHwE0LStq2nec6tBV4wDFNseM4FfL5vl/kvifQcsgUBEGZ6/iSjmkC0lDTl3oEFJXiZjmZi5+0fKN3pU7IyAkQT9mZCls8jwFC0sMwzHI9gjIv4MzOpj/dgGuu6cQpnuCFzEPFAxYPwaOOH9CbesM996r7lqMcFtHjuT9+CTdITWkcAvJZ3AAAAABJRU5ErkJggg==>
 
