@@ -3,7 +3,7 @@ import random
 np.random.seed(42)
 random.seed(42)
 import statsmodels.api as sm
-from statsmodels.tsa.stattools import grangercausalitytests, adfuller
+from statsmodels.tsa.stattools import grangercausalitytests, adfuller, kpss
 import scipy.stats as stats
 import matplotlib
 matplotlib.use('Agg')
@@ -49,6 +49,25 @@ def bayesian_counterfactual_impact(quantum_purity, doc, intervention_idx):
         
     pre_intervention = quantum_purity[:intervention_idx]
     post_intervention = quantum_purity[intervention_idx:]
+    
+    # --- Covariance Stationarity Check (KPSS) ---
+    doc.add_heading('Covariance Stationarity Check', level=3)
+    try:
+        # KPSS null hypothesis: time series is stationary around a deterministic trend
+        import warnings
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            kpss_stat, p_val, lags, crit = kpss(pre_intervention, regression='c', nlags='auto')
+            
+        if p_val < 0.05:
+            doc.add_paragraph(f"[Warning] KPSS P-value = {p_val:.4f} < 0.05. Pre-intervention covariance exhibits non-stationary drift. Applying autoregressive differencing to stabilize baseline.")
+            pre_intervention = np.diff(pre_intervention)
+            post_intervention = np.diff(post_intervention)
+        else:
+            doc.add_paragraph(f"[Passed] KPSS P-value = {p_val:.4f}. Pre-intervention covariance is structurally stationary, valid for counterfactual projection.")
+    except Exception as e:
+        doc.add_paragraph(f"KPSS test bypassed due to sample size constraints: {e}")
+    # --------------------------------------------
     
     try:
         model = sm.tsa.UnobservedComponents(pre_intervention, level='local linear trend')
