@@ -22,11 +22,15 @@
 
 为了弥合尺度鸿沟，我们使用了 Wigner 伪概率函数 $W(x, p, t)$，它同时兼容量子相位叠加与经典统计分布。我们假设高频神经采样构成了对环境的连续测量。在 Lindblad 主方程中：
 
-$$\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\} \right)$$
+$$
+\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \gamma_k \left( L_k \rho L_k^\dagger - \frac{1}{2} \lbrace L_k^\dagger L_k, \rho \rbrace \right)
+$$
 
 环境耗散率 $\gamma_k$ 被严格映射为系统自由能 $\mathcal{F}$ 的指数函数：
 
-$$\gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right)$$
+$$
+\gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right)
+$$
 
 因此，预测误差的降低（例如通过悬置先验预测）会成比例地减少测量作用 $\Lambda_c$，这受限于朗道尔极限 [3]。
 
@@ -46,7 +50,9 @@ $$\gamma_k(t) \propto \gamma_0 \exp\left(\frac{\mathcal{F}(t)}{k_B T}\right)$$
 
 为了从高斯白噪声中分离出真正的相变并避免“德克萨斯神枪手谬误”，我们通过 $3\sigma$ 回顾性盲扫应用了极值理论（EVT）。经验 CFC 极大值被拟合为广义极值（GEV）分布：
 
-$$G(x; \mu, \sigma, \xi) = \exp\left\{ -\left[ 1 + \xi \left( \frac{x - \mu}{\sigma} \right) \right]^{-1/\xi} \right\}$$
+$$
+G(x; \mu, \sigma, \xi) = \exp\left\lbrace -\left[ 1 + \xi \left( \frac{x - \mu}{\sigma} \right) \right]^{-1/\xi} \right\rbrace
+$$
 
 系统强制执行严格的方法论约束：方差低于 $10^{-6}$ 的数据段将被自动拒绝，以防止传感器故障异常。此外，只有当干预点通过了数据泄露隔离检查后，因果验证才会被授权启动。
 
@@ -54,7 +60,9 @@ $$G(x; \mu, \sigma, \xi) = \exp\left\{ -\left[ 1 + \xi \left( \frac{x - \mu}{\si
 
 在执行格兰杰因果推断之前，引擎强制要求进行增强型迪基-福勒（ADF）检验。非平稳时间序列需要进行一阶差分处理：
 
-$$\Delta y_t = y_t - y_{t-1}$$
+$$
+\Delta y_t = y_t - y_{t-1}
+$$
 
 为了获得高置信度的因果归因，我们用贝叶斯结构时间序列（BSTS）引擎替换了标准的预测模型，该引擎能够合成一个反事实的平行基线。
 
