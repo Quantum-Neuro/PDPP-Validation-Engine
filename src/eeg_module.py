@@ -80,7 +80,8 @@ def compute_topological_cfc(data_low, data_high, sfreq):
         # High-Gamma/Ripple amplitude band [80, 200] Hz to capture microscopic dipole topological properties
         f_amp = [80, 200]
         
-    p_obj = Pac(idpac=(1, 0, 0), f_pha=[4, 8], f_amp=f_amp)
+    # idpac=(1, 1, 4) applies phase/amplitude extraction via Hilbert and normalizes MVL to prevent amplitude-dependent inflation (addressing TensorPAC Warning)
+    p_obj = Pac(idpac=(1, 1, 4), f_pha=[4, 8], f_amp=f_amp)
     
     # filterfit expects input of shape (n_epochs, n_times)
     x_pha = np.atleast_2d(data_low)
