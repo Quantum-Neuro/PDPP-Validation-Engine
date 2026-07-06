@@ -73,9 +73,9 @@ def main():
     print("   (Standard Methodological Benchmark - Expects Negative Interception)")
     print("2: [80-200 Hz] High-Gamma / Ripple Band")
     print("   (Deep Microscopic Topology - Probing Genuine Quantum Coherence)")
-    print("Select the analysis frequency band (1 or 2) [Auto-defaulting to 1 in 3 seconds]: ", end='', flush=True)
+    print("Select the analysis frequency band (1 or 2) [Auto-defaulting to 1 in 5 seconds]: ", end='', flush=True)
     
-    i, o, e = select.select([sys.stdin], [], [], 3)
+    i, o, e = select.select([sys.stdin], [], [], 5)
     if i:
         choice = sys.stdin.readline().strip()
     else:
@@ -94,8 +94,8 @@ def main():
         print("-> [Info] Selected High-Gamma Band (80-200 Hz) with 250 Hz Bandpass.")
         
         # Optional Source Localization for High-Gamma
-        print("Enable 3D Source Localization (eLORETA)? Requires ~200MB MRI template download. (y/N) [Auto-defaulting to N in 3 seconds]: ", end='', flush=True)
-        i2, o2, e2 = select.select([sys.stdin], [], [], 3)
+        print("Enable 3D Source Localization (eLORETA)? Requires ~200MB MRI template download. (y/N) [Auto-defaulting to N in 5 seconds]: ", end='', flush=True)
+        i2, o2, e2 = select.select([sys.stdin], [], [], 5)
         if i2:
             loreta_choice = sys.stdin.readline().strip().lower()
         else:
