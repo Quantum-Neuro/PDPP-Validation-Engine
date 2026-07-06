@@ -18,7 +18,7 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
     doc = Document()
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     
-    title = doc.add_heading('PDPP v3.0 Experimental Validation Report', 0)
+    title = doc.add_heading('PDPP Experimental Validation Report', 0)
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     doc.add_paragraph(f"Generated on: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -30,7 +30,7 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
     
     if not eeg_files:
         doc.add_paragraph("EEG files not found! Please ensure data is downloaded or select valid files.")
-        report_path = os.path.join(report_dir, f"PDPP_v3_Validation_Report_{timestamp}.docx")
+        report_path = os.path.join(report_dir, f"PDPP_Validation_Report_{timestamp}.docx")
         doc.save(report_path)
         return report_path
         
@@ -71,7 +71,7 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
     ratio, mode = perform_evt_detection(pract_arr, control_arr, doc, timestamp, report_dir)
     
     if ratio is None:
-        report_path = os.path.join(report_dir, f"PDPP_v3_Validation_Report_{timestamp}.docx")
+        report_path = os.path.join(report_dir, f"PDPP_Validation_Report_{timestamp}.docx")
         doc.save(report_path)
         return report_path
 
@@ -84,7 +84,7 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
             p = doc.add_paragraph("-> INTERCEPTED! Backend causal validation aborted!")
             p.runs[0].font.color.rgb = docx.shared.RGBColor(255, 0, 0)
             doc.add_paragraph("-> Conclusion: Without a phase transition, non-classical causal intervention is physically impossible. This report serves as a valid Negative Control reference.")
-            report_path = os.path.join(report_dir, f"PDPP_v3_Validation_Report_{timestamp}.docx")
+            report_path = os.path.join(report_dir, f"PDPP_Validation_Report_{timestamp}.docx")
             doc.save(report_path)
             return report_path
 
@@ -119,7 +119,7 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
             doc.add_paragraph("[Level 2 Validation Failed]: Insufficient valid causal space for BSTS (Spike too close to boundary). Aborting causal inference.")
             p = doc.add_paragraph("-> SYSTEM INTERLOCK: Retrospective boundary crash prevented.")
             p.runs[0].font.color.rgb = docx.shared.RGBColor(255, 0, 0)
-            report_path = os.path.join(report_dir, f"PDPP_v3_Validation_Report_{timestamp}.docx")
+            report_path = os.path.join(report_dir, f"PDPP_Validation_Report_{timestamp}.docx")
             doc.save(report_path)
             return report_path
 
@@ -143,6 +143,6 @@ def run_validation_and_generate_report(eeg_files=None, report_dir=None):
         plot_granger_causality(sample_cfc_ts, purity_ts, causality_img_path)
         doc.add_picture(causality_img_path, width=docx.shared.Inches(6.0))
         
-    report_path = os.path.join(report_dir, f"PDPP_v3_Validation_Report_{timestamp}.docx")
+    report_path = os.path.join(report_dir, f"PDPP_Validation_Report_{timestamp}.docx")
     doc.save(report_path)
     return report_path
