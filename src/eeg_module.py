@@ -71,8 +71,8 @@ def compute_topological_cfc(data_low, data_high, sfreq):
     This is the core feature for EVT and Granger tests, highly immune to limb artifacts.
     """
     # Use uncapped Mean Vector Length (MVL, idpac=1) instead of normalized PLV to release genuine extreme bursts
-    # Broaden Gamma amplitude band to standard physiological consensus [30, 70] Hz to definitively preclude p-value hacking/overfitting
-    p_obj = Pac(idpac=(1, 0, 0), f_pha=[4, 8], f_amp=[30, 70])
+    # Shift to High-Gamma/Ripple amplitude band [80, 200] Hz to capture microscopic dipole topological properties
+    p_obj = Pac(idpac=(1, 0, 0), f_pha=[4, 8], f_amp=[80, 200])
     
     # filterfit expects input of shape (n_epochs, n_times)
     x_pha = np.atleast_2d(data_low)
@@ -110,8 +110,8 @@ def process_local_eeg(filepath):
         
     # Surgical Mains Interference Removal (50Hz/60Hz)
     raw.notch_filter(freqs=[50, 60], fir_design='firwin', phase='zero', verbose=False)
-    # Broaden upper bandpass limit to 100Hz to preserve Gamma band physics, avoiding filter collisions
-    raw.filter(l_freq=0.5, h_freq=100.0, fir_design='firwin', phase='zero', verbose=False)
+    # Broaden upper bandpass limit to 250Hz to preserve High-Gamma/Ripple band physics, avoiding filter collisions
+    raw.filter(l_freq=0.5, h_freq=250.0, fir_design='firwin', phase='zero', verbose=False)
     
     sfreq = raw.info['sfreq']
     
