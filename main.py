@@ -75,10 +75,21 @@ def main():
     
     if choice == '1':
         os.environ['PDPP_FREQ_MODE'] = 'gamma'
-        print("-> [Info] Selected Gamma Band (30-70 Hz) with 100 Hz Bandpass.")
+        os.environ['PDPP_ENABLE_ELORETA'] = '0'
+        print("-> [Info] Selected Gamma Band (30-70 Hz). Fast ICA enabled. Source Localization bypassed.")
     else:
         os.environ['PDPP_FREQ_MODE'] = 'high_gamma'
         print("-> [Info] Selected High-Gamma Band (80-200 Hz) with 250 Hz Bandpass.")
+        
+        # Optional Source Localization for High-Gamma
+        loreta_choice = input("Enable 3D Source Localization (eLORETA)? Requires ~200MB MRI template download. (y/N) [Default: N]: ").strip().lower()
+        if loreta_choice == 'y':
+            os.environ['PDPP_ENABLE_ELORETA'] = '1'
+            print("-> [Info] eLORETA Source Localization enabled.")
+        else:
+            os.environ['PDPP_ENABLE_ELORETA'] = '0'
+            print("-> [Info] Source Localization bypassed.")
+            
     print("="*40 + "\n")
 
     report_dir = os.path.join(os.getcwd(), "Report")
