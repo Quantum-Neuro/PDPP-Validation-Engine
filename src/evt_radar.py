@@ -41,15 +41,14 @@ def plot_evt_distribution(max_pract, max_ctrl, shape_p, loc_p, scale_p, shape_c,
     if mode == "Silent_Phase_Transition":
         fill_label = 'Silent Phase Transition (Nirodha / Zero-Point)'
         plt.title('EVT: Left-Tail GEV Distribution (Inverted for Silent Collapse)', fontsize=14, pad=15)
-        plt.xlabel('Negative Cross-Frequency Coupling (Inverted MI)')
+        plt.xlabel('Negative Normalized PAC (Inverted ndPAC)')
     elif mode == "Classical_Noise":
         fill_label = 'Classical Thermal Noise Limit'
         plt.title('EVT: GEV Distribution (Classical Noise)', fontsize=14, pad=15)
-        plt.xlabel('Cross-Frequency Coupling (Modulation Index)')
+        plt.xlabel('Normalized Phase-Amplitude Coupling (ndPAC)')
     else:
         fill_label = 'Topological Phase Transition (Freak Wave)'
-        plt.title('Extreme Value Theory (EVT): GEV Distribution of Theta-Gamma CFC', fontsize=14, pad=15)
-        plt.xlabel('Cross-Frequency Coupling (Modulation Index)')
+        plt.xlabel('Normalized Phase-Amplitude Coupling (ndPAC)')
         
     plt.fill_between(x_tail, pdf_p_tail, alpha=0.8, color='#FFC107', label=fill_label)
     plt.ylabel('Probability Density')
@@ -110,7 +109,13 @@ def perform_evt_detection(pract_arr, control_arr, doc, timestamp, report_dir):
     shape_p, loc_p, scale_p = genextreme.fit(max_pract)
     shape_c, loc_c, scale_c = genextreme.fit(max_ctrl)
     
-    doc.add_heading('Generalized Extreme Value (GEV) Distribution Fit Parameters (Theta-Gamma CFC)', level=2)
+    freq_mode = os.environ.get('PDPP_FREQ_MODE', 'high_gamma')
+    if freq_mode == 'gamma':
+        freq_label = "Theta [4-8Hz] Modulating Gamma [30-70Hz] ndPAC"
+    else:
+        freq_label = "Theta [4-8Hz] Modulating High-Gamma/Ripple [80-200Hz] ndPAC"
+        
+    doc.add_heading(f'Generalized Extreme Value (GEV) Fit Parameters ({freq_label})', level=2)
     doc.add_paragraph(f"Practitioners: Shape: {shape_p:.4f}, Loc: {loc_p:.4f}, Scale: {scale_p:.4f}")
     doc.add_paragraph(f"Controls: Shape: {shape_c:.4f}, Loc: {loc_c:.4f}, Scale: {scale_c:.4f}")
     
@@ -120,7 +125,7 @@ def perform_evt_detection(pract_arr, control_arr, doc, timestamp, report_dir):
     
     p = doc.add_paragraph()
     p.add_run(prob_title).bold = True
-    doc.add_paragraph(f"Configured coherence extreme threshold: {extreme_threshold:.4f} (PAC Modulation Index{' Inverted' if mode=='Silent_Phase_Transition' else ''})")
+    doc.add_paragraph(f"Configured coherence extreme threshold: {extreme_threshold:.4f} (ndPAC{' Inverted' if mode=='Silent_Phase_Transition' else ''})")
     doc.add_paragraph(f"Controls Probability: {prob_ctrl:.6e}")
     doc.add_paragraph(f"Practitioners Probability: {prob_pract:.6e}")
     

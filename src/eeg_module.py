@@ -80,16 +80,16 @@ def compute_topological_cfc(data_low, data_high, sfreq):
         # High-Gamma/Ripple amplitude band [80, 200] Hz to capture microscopic dipole topological properties
         f_amp = [80, 200]
         
-    # idpac=(1, 1, 4) applies phase/amplitude extraction via Hilbert and normalizes MVL to prevent amplitude-dependent inflation (addressing TensorPAC Warning)
-    p_obj = Pac(idpac=(1, 1, 4), f_pha=[4, 8], f_amp=f_amp)
+    # idpac=(4, 1, 4) applies phase/amplitude extraction and uses ndPAC (Normalized MVL) 
+    # to strictly confine values to [0, 1], completely eliminating amplitude bias.
+    p_obj = Pac(idpac=(4, 1, 4), f_pha=[4, 8], f_amp=f_amp)
     
     # filterfit expects input of shape (n_epochs, n_times)
     x_pha = np.atleast_2d(data_low)
     x_amp = np.atleast_2d(data_high)
     
-    # Compute MI (vectorized across all epochs in C/Fortran)
-    # Multiply by 1e6 to amplify magnitude, preventing microvolt-level EEG MVL (e-8) from being truncated to 0.0000 in statistics
-    cfc_values = p_obj.filterfit(sfreq, x_pha=x_pha, x_amp=x_amp, n_jobs=1) * 1e6
+    # Compute ndPAC (vectorized across all epochs in C/Fortran)
+    cfc_values = p_obj.filterfit(sfreq, x_pha=x_pha, x_amp=x_amp, n_jobs=1)
     return np.squeeze(cfc_values)
 
 def process_local_eeg(filepath):
