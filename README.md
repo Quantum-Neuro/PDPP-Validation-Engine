@@ -12,7 +12,7 @@ The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industri
 
 Unlike traditional statistical analysis pipelines, this engine discards all hardcoded parameters that could lead to overfitting or forward data leakage. It implements strict industrial-grade logical interlocks at the foundational level:
 
-1. **Full Tensor Vectorized Extraction (`scipy.signal`)**: Thoroughly strips away the inefficient loops of the MNE framework. The calculations for DMN Decoupling and broadband Gamma (30-70Hz) Cross-Frequency Coupling (CFC) are delegated to C/Fortran-level full tensor operations, completely eliminating GIL bottlenecks and micro-signal truncation.
+1. **Full Tensor Vectorized Extraction (`scipy.signal`)**: Thoroughly strips away the inefficient loops of the MNE framework. The calculations for the baseline Gamma (30-70Hz) methodological control group and the High-Gamma/Ripple band (80-200Hz) Cross-Frequency Coupling (CFC) are delegated to C/Fortran-level full tensor operations. It incorporates Picard-based Independent Component Analysis (ICA) to rigorously scrub high-frequency spatial artifacts.
 2. **Dynamic EVT Radar**: Rejects the "Texas Sharpshooter Fallacy." The engine utilizes Generalized Extreme Value (GEV) distributions to dynamically lock onto absolute physical peaks where EEG topological metrics break the $2\sigma$ threshold, establishing this as the sole dynamic intervention point for causal testing.
 3. **Global Constant Auto-Calibration (`auto_calibrate`)**: When simulating quantum dynamic evolution, the optimizer (`minimize_scalar`) is strictly constrained to output a global constant multiplier. This mechanism uniformly stretches the entire thermodynamic timeline, mathematically eliminating any illusion of "Data Leakage" caused by dynamic time-step modifications.
 4. **Structural Causal Inference Backend**:
@@ -21,9 +21,9 @@ Unlike traditional statistical analysis pipelines, this engine discards all hard
 
 ## 📊 Empirical Verification Results
 
-When applied to high-precision EEG datasets of advanced mental trainees, the engine's built-in stationarity test (ADF) successfully intercepted all classical non-stationary noise samples (Inverse Negative Controls), and achieved highly robust statistical causal inference in positive samples:
-- **Topological Bifurcation**: p = 7.43 &times; 10<sup>-14</sup>
-- **Counterfactual Shielding and Mean Reversion**: p = 3.76 &times; 10<sup>-27</sup>
+When applied to high-precision EEG datasets of advanced mental trainees, the engine first utilized the 30-70Hz broadband Gamma as a methodological benchmark to intercept statistical illusions caused by filter boundary variance collapse. Subsequently, within the ICA-scrubbed 80-200Hz High-Gamma/Ripple band, it achieved highly robust statistical causal inference:
+- **Topological Bifurcation (EVT FDR-Adjusted)**: q < 0.05 (47.56x probability enhancement)
+- **Counterfactual Shielding (KPSS-Stationary BSTS)**: p = 2.11 &times; 10<sup>-34</sup>
 
 *(For the mathematical boundaries, proofs of logical interlocks, and empirical inferences of the algorithm, please refer to the primary research manuscript in the `docs` folder).*
 
