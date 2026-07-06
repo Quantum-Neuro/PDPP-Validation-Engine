@@ -132,14 +132,28 @@ def process_local_eeg(filepath):
         # Fit ICA on the filtered data
         n_comps = min(15, len(raw.ch_names) - 1)
         if n_comps > 0:
-            ica = ICA(n_components=n_comps, random_state=42, method='fastica', max_iter="auto")
+            # Expert recommendation: Use 'picard' for better high-frequency separation
+            ica = ICA(n_components=n_comps, random_state=42, method='picard', max_iter="auto")
             ica.fit(raw, verbose=False)
-            # In a fully supervised pipeline, user would inspect ica.plot_components() here.
-            # For this automated pipeline, we establish the ICA architecture. 
-            # Further integration with auto-rejection algorithms (like mne-muscle) can be plugged in here.
-            ica.apply(raw, verbose=False)
+            
+            # Automated High-Frequency (EMG) Feature Recognition & Rejection
+            ica_src = ica.get_sources(raw).get_data()
+            muscle_bads = []
+            for i, comp in enumerate(ica_src):
+                variance = np.var(comp)
+                diff_variance = np.var(np.diff(comp))
+                # Heuristic: If derivative variance is extremely high relative to signal variance,
+                # the component is dominated by high-frequency spatial noise (muscle artifacts).
+                if variance > 0 and (diff_variance / variance) > 0.8:
+                    muscle_bads.append(i)
+                    
+            ica.exclude = muscle_bads
+            if muscle_bads:
+                print(f"-> [ICA] Auto-detected and excluded {len(muscle_bads)} high-frequency EMG components: {muscle_bads}")
+                
+            raw = ica.apply(raw, verbose=False)
     except Exception as e:
-        print(f"[Warning] ICA processing skipped: {e}")
+        print(f"[Warning] ICA processing skipped or picard missing: {e}")
         
     # Optional eLORETA Source Localization
     if os.environ.get('PDPP_ENABLE_ELORETA') == '1':
