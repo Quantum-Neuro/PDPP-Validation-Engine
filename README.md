@@ -6,11 +6,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)](https://arxiv.org)
 
-The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is an industrial-grade computational pipeline for a phenomenological model. The pipeline is designed to detect macroscopic topological bifurcations in complex biological neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems using Bayesian counterfactual inference.
+The **Pan-Dimensional Phase Projection (PDPP) Validation Engine** is a highly robust computational pipeline for a phenomenological model. The pipeline is designed to detect macroscopic topological bifurcations in complex biological neural systems (EEG/MEG) and quantify their non-classical causal shielding effects on simulated open quantum systems using Bayesian counterfactual inference.
 
 ## 🚀 Core Algorithmic Engineering
 
-Unlike traditional statistical analysis pipelines, this engine discards all hardcoded parameters that could lead to overfitting or forward data leakage. It implements strict industrial-grade logical interlocks at the foundational level:
+Unlike traditional statistical analysis pipelines, this engine discards all hardcoded parameters that could lead to overfitting or forward data leakage. It implements strictly constrained methodological interlocks at the foundational level:
 
 1. **Full Tensor Vectorized Extraction (`scipy.signal`)**: Thoroughly strips away the inefficient loops of the MNE framework. The calculations for the baseline Gamma (30-70Hz) methodological control group and the High-Gamma/Ripple band (80-200Hz) Cross-Frequency Coupling (CFC) are delegated to C/Fortran-level full tensor operations. It incorporates Picard-based Independent Component Analysis (ICA) to rigorously scrub high-frequency spatial artifacts.
 2. **Retrospective Blind Sweep & EVT Radar**: Rejects the "Texas Sharpshooter Fallacy" (hardcoding intervention points). The engine enforces a rigorous $2\sigma$ retrospective blind sweep combined with Generalized Extreme Value (GEV) distributions to dynamically lock onto absolute physical topological peaks, establishing this as the sole intervention point while strictly isolating forward data leakage.

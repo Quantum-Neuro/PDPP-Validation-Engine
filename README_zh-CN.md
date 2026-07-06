@@ -6,11 +6,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![ArXiv](https://img.shields.io/badge/arXiv-Pending-red.svg)](https://arxiv.org)
 
-**泛维度相位投影（PDPP）验证引擎**是一个工业级的唯象模型（Phenomenological Model）计算管线。该管线旨在检测复杂生物神经系统（EEG/MEG）中的宏观拓扑分岔（Topological Bifurcation），并利用贝叶斯反事实推断量化其对模拟开放量子系统产生的非经典因果屏蔽效应。
+**泛维度相位投影（PDPP）验证引擎**是一个高鲁棒性的唯象模型（Phenomenological Model）计算管线。该管线旨在检测复杂生物神经系统（EEG/MEG）中的宏观拓扑分岔（Topological Bifurcation），并利用贝叶斯反事实推断量化其对模拟开放量子系统产生的非经典因果屏蔽效应。
 
 ## 🚀 核心算法与工程防线 (Core Algorithmic Engineering)
 
-与传统的统计学分析管线不同，本引擎摒弃了所有可能导致过拟合或前向数据泄露的硬编码参数，在底层实现了严密的工业级逻辑互锁机制：
+与传统的统计学分析管线不同，本引擎摒弃了所有可能导致过拟合或前向数据泄露的硬编码参数，在底层实现了严密的方法论约束与互锁机制：
 
 1. **全张量向量化提取 (`scipy.signal`)**：彻底剥离了 MNE 框架低效的循环计算，将 30-70Hz 的方法学基准对照组与 80-200Hz (High-Gamma/Ripple) 频段的跨频耦合（CFC）计算下放至 C/Fortran 级别的全张量运算。系统内置了基于 Picard 算法的独立成分分析（ICA），以严苛标准清洗高频空间伪影。
 2. **回顾性异常盲扫与 EVT 雷达 (Retrospective Blind Sweep)**：拒绝“德克萨斯神枪手谬误”（即人为硬编码干预点）。引擎严格执行基于 $2\sigma$ 的回顾性异常盲扫，结合广义极值（GEV）分布动态锁定脑电拓扑指标的绝对物理峰值，在彻底隔离“未来数据泄露 (Lookahead Bias)”的前提下，将其作为因果检验的唯一动态干预切入点。

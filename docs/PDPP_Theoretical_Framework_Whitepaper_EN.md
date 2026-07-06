@@ -10,7 +10,7 @@ In the quest to unify macroscopic neural dynamics with microscopic quantum coher
 
 This model employs the Wigner pseudo-probability function as a cross-scale bridge, hypothesizing that the brain's Bayesian prediction errors (Friston Free Energy) can be mapped to environmental dissipation terms in open quantum systems, strictly governed by Landauer's Principle. To address the decoherence limit of neural systems at room temperature, this framework incorporates Fröhlich Condensation and Decoherence-Free Subspaces (DFS) as physical explanations for macroscopic topological protection.
 
-Building upon this theoretical foundation, the framework provides a highly robust time-series causal verification engine built with strict engineering hygiene. By introducing 50/60Hz surgical notch filters, dynamic $3\sigma$ retrospective blind sweeps, crash-prevention logic interlocks, and Bayesian Structural Time Series (BSTS), the engine successfully objectively isolates and verifies the significant physical impact of macroscopic topological phase transitions on heavy-tail distributions within highly noisy, high-precision empirical EEG data.
+Building upon this theoretical foundation, the framework provides a highly robust time-series causal verification engine built with strict methodological hygiene. By introducing 50/60Hz surgical notch filters, dynamic $3\sigma$ retrospective blind sweeps, algorithmic fail-safe interlocks, and Bayesian Structural Time Series (BSTS), the engine successfully objectively isolates and verifies the significant physical impact of macroscopic topological phase transitions on heavy-tail distributions within highly noisy, high-precision empirical EEG data.
 
 ## **Architecture Roadmap**
 
@@ -20,7 +20,7 @@ To ensure endogenous logical consistency across multi-disciplinary theories, thi
 2. **Dissipation Dynamics Mapping (Chapter 2):** Maps macroscopic variables of computational neuroscience (active inference and free energy) to the dissipation parameters of microscopic open systems via non-equilibrium thermodynamic equations.  
 3. **Cross-Scale & Insulation Mechanism (Chapter 3):** Introduces Fröhlich Condensation and Cross-Frequency Coupling (CFC) to explain how macroscopic electromagnetic topology establishes a physical shield against thermal noise decoherence.  
 4. **Non-linear Kinetic Bifurcation (Chapter 4):** Demonstrates that under specific topological protection, the drift term of the Fokker-Planck equation undergoes parametric distortion, leading to macroscopic topological phase transitions.  
-5. **Empirical Engineering Pipeline (Chapter 5):** Deconstructs the supporting industrial-grade verification code, explaining how stationarity tests (ADF), blind-sweep extreme value radars, and Bayesian counterfactual inference lock onto these phase transitions in real-world data.
+5. **Empirical Methodological Pipeline (Chapter 5):** Deconstructs the supporting strictly constrained verification code, explaining how stationarity tests (ADF), blind-sweep extreme value radars, and Bayesian counterfactual inference lock onto these phase transitions in real-world data.
 
 ## **Chapter 1: The 5D Phase Space ($\mathcal{M}^5$) and Wigner Manifold**
 
@@ -97,7 +97,7 @@ In conventional classical physics, merely reducing diffusion noise $D$ only caus
 
 The parametric distortion of the drift term $\mu$ triggers a **Pitchfork Bifurcation** in non-linear dynamics. The potential energy surface undergoes fundamental topological remodeling, inducing novel high-energy or low-entropy attractors. Reflected via Extreme Value Theory (EVT), the system exhibits Extreme Heavy-tailed Anomalies that severely deviate from Gaussian white noise in specific physical metrics.
 
-## **Chapter 5: Industrial-Grade Empirical Validation Engine**
+## **Chapter 5: Strictly Constrained Empirical Validation Framework**
 
 The legitimacy of any cross-disciplinary theory must withstand the rigorous scrutiny of signal processing science. The PDPP framework deploys a verification engine equipped with strict fault-interlocks and data-leakage isolation mechanisms to ensure empirical results are not statistical illusions.
 
