@@ -64,6 +64,8 @@ def main():
     else:
         print(f"Found {len(eeg_files)} data files in [{active_dataset_name}]. Preparing for analysis...")
 
+    import select
+    
     print("\n" + "="*40)
     print(" Frequency Band Selection")
     print("="*40)
@@ -71,7 +73,17 @@ def main():
     print("   (Standard Methodological Benchmark - Expects Negative Interception)")
     print("2: [80-200 Hz] High-Gamma / Ripple Band")
     print("   (Deep Microscopic Topology - Probing Genuine Quantum Coherence)")
-    choice = input("Select the analysis frequency band (1 or 2) [Default: 2]: ").strip()
+    print("Select the analysis frequency band (1 or 2) [Auto-defaulting to 1 in 3 seconds]: ", end='', flush=True)
+    
+    i, o, e = select.select([sys.stdin], [], [], 3)
+    if i:
+        choice = sys.stdin.readline().strip()
+    else:
+        print("\nTimeout reached. Defaulting to 1.")
+        choice = '1'
+        
+    if choice not in ['1', '2']:
+        choice = '1'
     
     if choice == '1':
         os.environ['PDPP_FREQ_MODE'] = 'gamma'
@@ -82,7 +94,14 @@ def main():
         print("-> [Info] Selected High-Gamma Band (80-200 Hz) with 250 Hz Bandpass.")
         
         # Optional Source Localization for High-Gamma
-        loreta_choice = input("Enable 3D Source Localization (eLORETA)? Requires ~200MB MRI template download. (y/N) [Default: N]: ").strip().lower()
+        print("Enable 3D Source Localization (eLORETA)? Requires ~200MB MRI template download. (y/N) [Auto-defaulting to N in 3 seconds]: ", end='', flush=True)
+        i2, o2, e2 = select.select([sys.stdin], [], [], 3)
+        if i2:
+            loreta_choice = sys.stdin.readline().strip().lower()
+        else:
+            print("\nTimeout reached. Defaulting to N.")
+            loreta_choice = 'n'
+            
         if loreta_choice == 'y':
             os.environ['PDPP_ENABLE_ELORETA'] = '1'
             print("-> [Info] eLORETA Source Localization enabled.")
