@@ -64,6 +64,23 @@ def main():
     else:
         print(f"Found {len(eeg_files)} data files in [{active_dataset_name}]. Preparing for analysis...")
 
+    print("\n" + "="*40)
+    print(" Frequency Band Selection")
+    print("="*40)
+    print("1: [30-70 Hz] Gamma Band")
+    print("   (Standard Methodological Benchmark - Expects Negative Interception)")
+    print("2: [80-200 Hz] High-Gamma / Ripple Band")
+    print("   (Deep Microscopic Topology - Probing Genuine Quantum Coherence)")
+    choice = input("Select the analysis frequency band (1 or 2) [Default: 2]: ").strip()
+    
+    if choice == '1':
+        os.environ['PDPP_FREQ_MODE'] = 'gamma'
+        print("-> [Info] Selected Gamma Band (30-70 Hz) with 100 Hz Bandpass.")
+    else:
+        os.environ['PDPP_FREQ_MODE'] = 'high_gamma'
+        print("-> [Info] Selected High-Gamma Band (80-200 Hz) with 250 Hz Bandpass.")
+    print("="*40 + "\n")
+
     report_dir = os.path.join(os.getcwd(), "Report")
     
     try:
