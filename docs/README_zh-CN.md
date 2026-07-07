@@ -3,8 +3,8 @@
 # 研究手稿与理论框架
 
 ### 📑 标题
-**宏观拓扑相变引发神经网络对量子退相干的非经典因果屏蔽：一项实证验证**
-*(Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation)*
+**跨尺度因果推断的高鲁棒性计算管线：避免量子生物学中的统计学错觉**
+*(A Highly Robust Computational Pipeline for Cross-Scale Causal Inference: Avoiding Statistical Illusions in Quantum Biology)*
 
 ### ✍️ 作者
 **Weili Jia**  

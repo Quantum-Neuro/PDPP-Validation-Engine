@@ -87,5 +87,5 @@ The PDPP Validation Engine supports the import of your own high-precision EEG da
 
 If you utilize the algorithms of this open-source engine (such as the EVT Extreme Value Radar, BSTS Quantum Baseline Calibrator, etc.) in your academic research, please cite our underlying methodological manuscript:
 ```text
-Jia, W., et al. "Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation." arXiv (2026).
+Jia, W., et al. "A Highly Robust Computational Pipeline for Cross-Scale Causal Inference: Avoiding Statistical Illusions in Quantum Biology." arXiv (2026).
 ```

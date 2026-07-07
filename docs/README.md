@@ -3,7 +3,7 @@
 # Research Manuscript & Theoretical Framework
 
 ### 📑 Title
-**Macroscopic Topological Phase Transitions of the Neural Network Induce Non-Classical Causal Shielding on Quantum Decoherence: An Empirical Validation**
+**A Highly Robust Computational Pipeline for Cross-Scale Causal Inference: Avoiding Statistical Illusions in Quantum Biology**
 
 ### ✍️ Author
 **Weili Jia**  
